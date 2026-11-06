@@ -78,21 +78,32 @@ def clean(text, n=DESC_LEN):
 
 
 def ft_token(cid, secret):
-    form = urllib.parse.urlencode(
-        {
-            "grant_type": "client_credentials",
-            "client_id": cid,
-            "client_secret": secret,
-            "scope": "api_offresdemploiv2 o2dsoffre",
-        }
-    ).encode()
-    _, js = http(
-        FT_TOKEN_URL,
-        data=form,
-        headers={"Content-Type": "application/x-www-form-urlencoded"},
-        method="POST",
-    )
-    return js["access_token"]
+    last = None
+    for scope in ("api_offresdemploiv2 o2dsoffre", "api_offresdemploiv2"):
+        form = urllib.parse.urlencode(
+            {
+                "grant_type": "client_credentials",
+                "client_id": cid.strip(),
+                "client_secret": secret.strip(),
+                "scope": scope,
+            }
+        ).encode()
+        try:
+            _, js = http(
+                FT_TOKEN_URL,
+                data=form,
+                headers={"Content-Type": "application/x-www-form-urlencoded"},
+                method="POST",
+            )
+            return js["access_token"]
+        except urllib.error.HTTPError as e:
+            # The error body holds only an OAuth error code, never the secret.
+            try:
+                body = json.loads(e.read() or b"{}")
+                last = f"HTTP {e.code} {body.get('error', '')}: {body.get('error_description', '')}"
+            except Exception:  # noqa: BLE001
+                last = f"HTTP {e.code}"
+    raise RuntimeError(last)
 
 
 def fetch_ft(errors):
@@ -103,7 +114,7 @@ def fetch_ft(errors):
     try:
         token = ft_token(cid, secret)
     except Exception as e:  # noqa: BLE001
-        errors.append(f"France Travail token: {type(e).__name__} {getattr(e, 'code', '')}")
+        errors.append(f"France Travail token: {e}")
         return []
     out = []
     for q in FT_QUERIES:

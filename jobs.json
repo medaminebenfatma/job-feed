@@ -1,10 +1,10 @@
 {
- "generatedAt": "2026-11-06T16:21:56+00:00",
+ "generatedAt": "2026-11-06T16:22:34+00:00",
  "counts": {
   "Reed": 70
  },
  "errors": [
-  "France Travail token: HTTPError 400"
+  "France Travail token: HTTP 400 invalid_client: Client authentication failed"
  ],
  "jobs": [
   {
@@ -191,20 +191,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57498611",
-   "title": "Senior AI DevOps Engineer",
-   "company": "Lorien",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": false,
-   "published": "27/10/2026",
-   "url": "https://www.reed.co.uk/jobs/senior-ai-devops-engineer/57498611",
-   "description": "Senior AI-Enabled DevOps Engineer / DV Clearable / 5 days a week on-site Build and operate modern software systems where AI meets production reality We're looking for a Senior AI-Enabled DevOps Engineer to join a growing engineering capability working on complex, important software systems that increasingly embed AI to improve delivery, decision-making, and operational effectiveness . This is a hands-on senior engineering role for someone who en...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57392901",
    "title": "Senior Platform DevOps Engineer",
    "company": "Impellam",
@@ -215,6 +201,20 @@
    "published": "25/09/2026",
    "url": "https://www.reed.co.uk/jobs/senior-platform-devops-engineer/57392901",
    "description": "Working Environment You'll work on real, live systems where delivery quality, operational reliability, and adaptability matter more than theoretical knowledge. Collaboration across engineering, platform and architecture teams is expected, with a strong emphasis on ownership and pragmatism. What You'll Be Doing - Design, deploy and operate platforms and services on Kubernetes-based environments - Manage deployments using Helm, with supporting inf...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57498611",
+   "title": "Senior AI DevOps Engineer",
+   "company": "Lorien",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": false,
+   "published": "27/10/2026",
+   "url": "https://www.reed.co.uk/jobs/senior-ai-devops-engineer/57498611",
+   "description": "Senior AI-Enabled DevOps Engineer / DV Clearable / 5 days a week on-site Build and operate modern software systems where AI meets production reality We're looking for a Senior AI-Enabled DevOps Engineer to join a growing engineering capability working on complex, important software systems that increasingly embed AI to improve delivery, decision-making, and operational effectiveness . This is a hands-on senior engineering role for someone who en...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {
@@ -289,20 +289,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57392913",
-   "title": "Lead AI Enabled Software/DevOps Engineer",
-   "company": "Impellam",
-   "location": "EC2V6EE",
-   "contract": "Contract",
-   "salary": "700.0–850.0 GBP",
-   "remoteHint": false,
-   "published": "25/09/2026",
-   "url": "https://www.reed.co.uk/jobs/lead-ai-enabled-software-devops-engineer/57392913",
-   "description": "What You'll Be Doing - Provide technical leadership across AI-enabled software and DevOps engineering teams - Set architectural direction for API-first design, system integration, and platform enablement for AI - Lead the evolution of legacy or existing applications towards modern, service-based and API-driven architectures - Define and guide integration patterns between applications, platforms, and AI services - Make informed decisions on when ...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57409948",
    "title": "Red Hat OpenShift & DevOps Engineer",
    "company": "Vbeyond",
@@ -317,16 +303,16 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57392908",
-   "title": "Senior AI Enabled Software/DevOps Engineer",
+   "id": "reed-57392913",
+   "title": "Lead AI Enabled Software/DevOps Engineer",
    "company": "Impellam",
    "location": "EC2V6EE",
    "contract": "Contract",
-   "salary": "650.0–850.0 GBP",
+   "salary": "700.0–850.0 GBP",
    "remoteHint": false,
    "published": "25/09/2026",
-   "url": "https://www.reed.co.uk/jobs/senior-ai-enabled-software-devops-engineer/57392908",
-   "description": "What You'll Be Doing - Design, build, and operate AI-enabled software and platform solutions - Develop and maintain API-driven services and integrations that allow systems to work effectively with AI capabilities - Contribute to the evolution of existing applications towards modern, service-based and cloud-native architectures - Implement and operate integration mechanisms between software systems and AI platforms, including emerging patterns wh...",
+   "url": "https://www.reed.co.uk/jobs/lead-ai-enabled-software-devops-engineer/57392913",
+   "description": "What You'll Be Doing - Provide technical leadership across AI-enabled software and DevOps engineering teams - Set architectural direction for API-first design, system integration, and platform enablement for AI - Lead the evolution of legacy or existing applications towards modern, service-based and API-driven architectures - Define and guide integration patterns between applications, platforms, and AI services - Make informed decisions on when ...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {
@@ -341,6 +327,20 @@
    "published": "21/10/2026",
    "url": "https://www.reed.co.uk/jobs/azure-devops-engineer-transport-azure-okta/57480124",
    "description": "Azure DevOps Engineer - Transport, Azure, Okta market rate (Inside IR35) Remote - must be UK based 6 Months We are looking for an experienced Azure DevOps Engineer to support a major technology transformation, taking ownership of the Azure hosting, infrastructure and connectivity landscape for a key project. Key Requirements Strong hands-on experience as a Microsoft Azure DevOps Engineer Strong expertise across Azure infrastructure, hosting and ...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57392908",
+   "title": "Senior AI Enabled Software/DevOps Engineer",
+   "company": "Impellam",
+   "location": "EC2V6EE",
+   "contract": "Contract",
+   "salary": "650.0–850.0 GBP",
+   "remoteHint": false,
+   "published": "25/09/2026",
+   "url": "https://www.reed.co.uk/jobs/senior-ai-enabled-software-devops-engineer/57392908",
+   "description": "What You'll Be Doing - Design, build, and operate AI-enabled software and platform solutions - Develop and maintain API-driven services and integrations that allow systems to work effectively with AI capabilities - Contribute to the evolution of existing applications towards modern, service-based and cloud-native architectures - Implement and operate integration mechanisms between software systems and AI platforms, including emerging patterns wh...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {
@@ -597,20 +597,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57498604",
-   "title": "Senior Platform Engineer",
-   "company": "Lorien",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": false,
-   "published": "27/10/2026",
-   "url": "https://www.reed.co.uk/jobs/senior-platform-engineer/57498604",
-   "description": "Senior Platform Engineer - DV Clearable - 5 Days On-Site Build and operate the platforms that make AI and machine learning work at scale We're looking for a Senior Platform Engineer to join our team and play a key role in designing and operating the platform that underpins AI and machine learning delivery . This is a hands-on senior platform role , focused on building robust, Kubernetes-based platforms that enable MLOps engineers, ML engineers, ...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57424857",
    "title": "Senior Platform Engineer",
    "company": "Lorien",
@@ -620,6 +606,20 @@
    "remoteHint": false,
    "published": "05/10/2026",
    "url": "https://www.reed.co.uk/jobs/senior-platform-engineer/57424857",
+   "description": "Senior Platform Engineer - DV Clearable - 5 Days On-Site Build and operate the platforms that make AI and machine learning work at scale We're looking for a Senior Platform Engineer to join our team and play a key role in designing and operating the platform that underpins AI and machine learning delivery . This is a hands-on senior platform role , focused on building robust, Kubernetes-based platforms that enable MLOps engineers, ML engineers, ...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57498604",
+   "title": "Senior Platform Engineer",
+   "company": "Lorien",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": false,
+   "published": "27/10/2026",
+   "url": "https://www.reed.co.uk/jobs/senior-platform-engineer/57498604",
    "description": "Senior Platform Engineer - DV Clearable - 5 Days On-Site Build and operate the platforms that make AI and machine learning work at scale We're looking for a Senior Platform Engineer to join our team and play a key role in designing and operating the platform that underpins AI and machine learning delivery . This is a hands-on senior platform role , focused on building robust, Kubernetes-based platforms that enable MLOps engineers, ML engineers, ...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },

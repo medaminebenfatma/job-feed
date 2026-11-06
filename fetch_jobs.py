@@ -297,8 +297,9 @@ INDEED_SEARCHES = [
 
 
 def fetch_indeed(errors):
-    key, base = os.environ.get("OMKAR_API_KEY"), os.environ.get("OMKAR_INDEED_URL")
-    if not key or not base:
+    key = os.environ.get("OMKAR_API_KEY")
+    base = os.environ.get("OMKAR_INDEED_URL") or "https://indeed-scraper.omkar.cloud/jobs/search"
+    if not key:
         return []
     out = []
     for q in INDEED_SEARCHES:

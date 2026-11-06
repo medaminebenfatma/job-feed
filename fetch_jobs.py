@@ -247,7 +247,13 @@ def fetch_apify(errors):
                 timeout=290,
             )
         except urllib.error.HTTPError as e:
-            errors.append(f"Apify {label}: HTTP {e.code}")
+            try:
+                msg = (json.loads(e.read() or b"{}").get("error") or {}).get("message", "")
+            except Exception:  # noqa: BLE001
+                msg = ""
+            errors.append(f"Apify {label}: HTTP {e.code} {msg[:200]}")
+            if e.code in (401, 403):
+                break  # same auth problem for every search; don't repeat it
             continue
         except Exception as e:  # noqa: BLE001
             errors.append(f"Apify {label}: {type(e).__name__}")

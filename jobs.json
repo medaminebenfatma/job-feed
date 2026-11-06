@@ -1,15 +1,12 @@
 {
- "generatedAt": "2026-11-06T16:35:59+00:00",
- "apifyAt": "2026-11-06T16:35:59+00:00",
+ "generatedAt": "2026-11-06T16:36:44+00:00",
+ "apifyAt": "2026-11-06T16:36:44+00:00",
  "counts": {
   "Reed": 70
  },
  "errors": [
   "France Travail token: HTTP 400 invalid_client: Client authentication failed",
-  "Apify JobServe United Kingdom DevOps: HTTP 403",
-  "Apify JobServe United Kingdom Kubernetes OR SRE: HTTP 403",
-  "Apify JobServe United States of America DevOps: HTTP 403",
-  "Apify CareerBoard United Kingdom DevOps: HTTP 403"
+  "Apify JobServe United Kingdom DevOps: HTTP 403 This Actor requires full access to your account. You must approve its permissions before running it: https://console.apify.com/actors/N2ZNj4h4QR8uNYFxi?approvePermissions=true"
  ],
  "jobs": [
   {
@@ -672,20 +669,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57523407",
-   "title": "Application Architect",
-   "company": "Advanced Resource Managers Limited",
-   "location": "Glasgow",
-   "contract": "Contract",
-   "salary": "400.0–500.0 GBP",
-   "remoteHint": false,
-   "published": "04/11/2026",
-   "url": "https://www.reed.co.uk/jobs/application-architect/57523407",
-   "description": "A leading consultancy is seeking an experienced Application Architect to define and drive the architecture of cloud-native business applications and data-driven solutions. This role will focus on designing secure, scalable, and resilient solutions within the Microsoft Azure ecosystem, with particular emphasis on Kubernetes-based platforms and integration with enterprise data services. You will work closely with both technical and business stakeh...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57427005",
    "title": "Golang Engineer",
    "company": "Vbeyond",
@@ -696,6 +679,20 @@
    "published": "06/10/2026",
    "url": "https://www.reed.co.uk/jobs/golang-engineer/57427005",
    "description": "Job Summary We are looking for an experienced Golang Engineer to develop, maintain and troubleshoot secure Go-based microservices within a modern cloud-native environment. The successful candidate will have strong experience with Go, REST APIs, microservices, containerisation, Kubernetes and Helm , along with a solid understanding of secure coding, Agile development and continuous delivery practices. Key Responsibilities Develop, maintain and tr...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57523407",
+   "title": "Application Architect",
+   "company": "Advanced Resource Managers Limited",
+   "location": "Glasgow",
+   "contract": "Contract",
+   "salary": "400.0–500.0 GBP",
+   "remoteHint": false,
+   "published": "04/11/2026",
+   "url": "https://www.reed.co.uk/jobs/application-architect/57523407",
+   "description": "A leading consultancy is seeking an experienced Application Architect to define and drive the architecture of cloud-native business applications and data-driven solutions. This role will focus on designing secure, scalable, and resilient solutions within the Microsoft Azure ecosystem, with particular emphasis on Kubernetes-based platforms and integration with enterprise data services. You will work closely with both technical and business stakeh...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {
@@ -910,20 +907,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57416012",
-   "title": "Infrastructure Engineer",
-   "company": "Access Computer Consulting plc",
-   "location": "Cardiff",
-   "contract": "Contract",
-   "salary": "550.0–550.0 GBP",
-   "remoteHint": true,
-   "published": "02/10/2026",
-   "url": "https://www.reed.co.uk/jobs/infrastructure-engineer/57416012",
-   "description": "Infrastructure / Platform Engineer - AWS / Linux / Terraform 550- 600/day | Inside IR35 | Remote We are looking for an experienced Infrastructure / Platform Engineer to work on secure and resilient infrastructure within a Central Government environment. Strong experience required across: Linux Terraform AWS Docker Bash / Python Infrastructure security and hardening Vulnerability management Automation and configuration management You'll be respon...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57440014",
    "title": "MLOps Engineer",
    "company": "Harnham - Data & Analytics Recruitment",
@@ -934,6 +917,20 @@
    "published": "09/10/2026",
    "url": "https://www.reed.co.uk/jobs/mlops-engineer/57440014",
    "description": "Contract MLOps / Machine Learning Engineer 650/day Inside IR35 6-Month Contract Hybrid London (2 days per week preferred) We're looking for an experienced MLOps / Machine Learning Engineer to join a high-performing recommendation team within a major consumer technology platform. This is an engineering-first role focused on deploying and scaling machine learning models in real-time production environments. You'll work on customer-facing recommend...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57416012",
+   "title": "Infrastructure Engineer",
+   "company": "Access Computer Consulting plc",
+   "location": "Cardiff",
+   "contract": "Contract",
+   "salary": "550.0–550.0 GBP",
+   "remoteHint": true,
+   "published": "02/10/2026",
+   "url": "https://www.reed.co.uk/jobs/infrastructure-engineer/57416012",
+   "description": "Infrastructure / Platform Engineer - AWS / Linux / Terraform 550- 600/day | Inside IR35 | Remote We are looking for an experienced Infrastructure / Platform Engineer to work on secure and resilient infrastructure within a Central Government environment. Strong experience required across: Linux Terraform AWS Docker Bash / Python Infrastructure security and hardening Vulnerability management Automation and configuration management You'll be respon...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {

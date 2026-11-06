@@ -31,7 +31,8 @@ REMOTE_RE = re.compile(
 )
 DEVOPS_RE = re.compile(
     r"devops|dev ops|sre\b|site reliability|kubernetes|k8s|platform engineer|"
-    r"cloud engineer|ing[ée]nieur cloud|terraform|devsecops|mlops|infrastructure as code",
+    r"cloud engineer|ing[ée]nieur cloud|cloud (architect|ops|infra)|terraform|aws|azure|gcp|"
+    r"devsecops|mlops|infrastructure as code|ing[ée]nieur (infra|syst[eè]me)|platform|infrastructure engineer",
     re.I,
 )
 
@@ -288,11 +289,21 @@ def fetch_apify(errors):
 # Needs OMKAR_API_KEY and OMKAR_INDEED_URL (the full ".../jobs/search" address
 # shown in the API playground). Runs at most once a day, like Apify.
 INDEED_SEARCHES = [
-    {"query": "devops", "country": "FR", "location": "remote", "job_type": "freelance", "date_posted": "last_3_days"},
-    {"query": "devops", "country": "FR", "location": "Nice", "date_posted": "last_3_days"},
-    {"query": "devops", "country": "FR", "location": "Monaco", "date_posted": "last_3_days"},
-    {"query": "sre kubernetes", "country": "FR", "location": "remote", "date_posted": "last_3_days"},
-    {"query": "devops", "country": "GB", "work_setting": "remote", "job_type": "contract", "date_posted": "last_3_days"},
+    # France (14 days back)
+    {"query": "devops", "country": "FR", "location": "remote", "date_posted": "last_14_days"},
+    {"query": "devops", "country": "FR", "location": "Nice", "date_posted": "last_14_days"},
+    {"query": "devops", "country": "FR", "location": "Monaco", "date_posted": "last_14_days"},
+    {"query": "sre kubernetes", "country": "FR", "location": "remote", "date_posted": "last_14_days"},
+    {"query": "terraform", "country": "FR", "location": "remote", "date_posted": "last_14_days"},
+    {"query": "aws devops", "country": "FR", "location": "remote", "date_posted": "last_14_days"},
+    {"query": "cloud engineer", "country": "FR", "location": "remote", "date_posted": "last_14_days"},
+    {"query": "cloud engineer", "country": "FR", "location": "Nice", "date_posted": "last_14_days"},
+    # Abroad: remote contracts
+    {"query": "devops", "country": "GB", "work_setting": "remote", "job_type": "contract", "date_posted": "last_14_days"},
+    {"query": "terraform", "country": "GB", "work_setting": "remote", "job_type": "contract", "date_posted": "last_14_days"},
+    {"query": "devops", "country": "CA", "work_setting": "remote", "job_type": "contract", "date_posted": "last_14_days"},
+    {"query": "devops", "country": "US", "work_setting": "remote", "job_type": "contract", "date_posted": "last_14_days"},
+    {"query": "sre kubernetes", "country": "US", "work_setting": "remote", "job_type": "contract", "date_posted": "last_14_days"},
 ]
 
 

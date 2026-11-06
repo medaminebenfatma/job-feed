@@ -1,10 +1,15 @@
 {
- "generatedAt": "2026-11-06T16:22:34+00:00",
+ "generatedAt": "2026-11-06T16:35:59+00:00",
+ "apifyAt": "2026-11-06T16:35:59+00:00",
  "counts": {
   "Reed": 70
  },
  "errors": [
-  "France Travail token: HTTP 400 invalid_client: Client authentication failed"
+  "France Travail token: HTTP 400 invalid_client: Client authentication failed",
+  "Apify JobServe United Kingdom DevOps: HTTP 403",
+  "Apify JobServe United Kingdom Kubernetes OR SRE: HTTP 403",
+  "Apify JobServe United States of America DevOps: HTTP 403",
+  "Apify CareerBoard United Kingdom DevOps: HTTP 403"
  ],
  "jobs": [
   {
@@ -387,20 +392,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57477592",
-   "title": "D365 Platform Engineer",
-   "company": "Lorien",
-   "location": "Watford",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": true,
-   "published": "20/10/2026",
-   "url": "https://www.reed.co.uk/jobs/d365-platform-engineer/57477592",
-   "description": "D365 Platform Engineer 6-Month Contract | Remote with occasional travel to Manchester | Inside IR35 Our client is looking for an experienced D365 Platform &amp; Environment Engineer to take ownership of a business-critical Dynamics 365 Finance &amp; Operations (F&amp;O) estate. You'll be responsible for managing D365 environments through Lifecycle Services (LCS) , supporting deployments and environment refreshes, administering Azure subscription...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57435991",
    "title": "Lead Site Reliability & Observability Engineer",
    "company": "Amtis professional Ltd",
@@ -411,6 +402,20 @@
    "published": "08/10/2026",
    "url": "https://www.reed.co.uk/jobs/lead-site-reliability-observability-engineer/57435991",
    "description": "Lead Site Reliability &amp; Observability Engineer Location: Birmingham Rate: Up to 575/day – Inside IR35 Contract opportunity – Initially 6 months Hybrid working: 2 days on-site per week We’re recruiting a Lead Site Reliability &amp; Observability Engineer to lead the implementation of Datadog across Azure and Cloudflare. You’ll build synthetic monitoring and automated production validation for critical APIs, integrations and customer journeys,...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57477592",
+   "title": "D365 Platform Engineer",
+   "company": "Lorien",
+   "location": "Watford",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": true,
+   "published": "20/10/2026",
+   "url": "https://www.reed.co.uk/jobs/d365-platform-engineer/57477592",
+   "description": "D365 Platform Engineer 6-Month Contract | Remote with occasional travel to Manchester | Inside IR35 Our client is looking for an experienced D365 Platform &amp; Environment Engineer to take ownership of a business-critical Dynamics 365 Finance &amp; Operations (F&amp;O) estate. You'll be responsible for managing D365 environments through Lifecycle Services (LCS) , supporting deployments and environment refreshes, administering Azure subscription...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {
@@ -443,20 +448,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57498601",
-   "title": "Lead Platform Engineer",
-   "company": "Lorien",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": false,
-   "published": "27/10/2026",
-   "url": "https://www.reed.co.uk/jobs/lead-platform-engineer/57498601",
-   "description": "Lead Platform Engineer - Must be DV Clearable - 5 days a week on-site Building the platforms that make AI and machine learning work in production We're looking for a Lead Platform Engineer to join a growing engineering organisation and play a pivotal role in designing, building, and operating an MLOps platform that enables AI and data science teams to deliver reliably in production. This is a senior, hands-on technical leadership role , not a pe...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57415914",
    "title": "AWS AI / MLOps Engineer (Contract/Remote)",
    "company": "Tenth Revolution Group",
@@ -467,6 +458,20 @@
    "published": "02/10/2026",
    "url": "https://www.reed.co.uk/jobs/aws-ai-mlops-engineer-contract-remote/57415914",
    "description": "I'm working on an exciting AI engineering project with a leading enterprise focused on deploying agentic GenAI solutions in AWS. Key responsibilities: Deploy and operationalise GenAI solutions in AWS Build highly available SageMaker endpoints with monitoring and alerting Develop Terraform modules for repeatable infrastructure deployments Implement CI/CD and MLOps best practices Produce architecture documentation, configuration guides and operati...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57498601",
+   "title": "Lead Platform Engineer",
+   "company": "Lorien",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": false,
+   "published": "27/10/2026",
+   "url": "https://www.reed.co.uk/jobs/lead-platform-engineer/57498601",
+   "description": "Lead Platform Engineer - Must be DV Clearable - 5 days a week on-site Building the platforms that make AI and machine learning work in production We're looking for a Lead Platform Engineer to join a growing engineering organisation and play a pivotal role in designing, building, and operating an MLOps platform that enables AI and data science teams to deliver reliably in production. This is a senior, hands-on technical leadership role , not a pe...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {
@@ -499,20 +504,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57399313",
-   "title": "Build & Deployment Engineer",
-   "company": " Deerfoot Recruitment Solutions Ltd",
-   "location": "EC2Y9AG",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": true,
-   "published": "28/09/2026",
-   "url": "https://www.reed.co.uk/jobs/build-deployment-engineer/57399313",
-   "description": "Build &amp; Deployment Engineer - C#/.NET, Octopus Deploy &amp; Secure Coding City of London - Hybrid (4 Days on-site, 1 day WFH each week) Inside IR35 Contract Are you a build and deployment engineer who can open up the C# code behind a pipeline and fix it yourself? That combination is exactly what's needed here. You'll join the Platform Engineering function of one of the world's largest financial groups, owning the on-premises toolchain that t...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57504722",
    "title": "Cloud Engineering Lead (Azure)",
    "company": "TXP Technology x People",
@@ -523,6 +514,20 @@
    "published": "29/10/2026",
    "url": "https://www.reed.co.uk/jobs/cloud-engineering-lead-azure/57504722",
    "description": "Cloud Engineering Lead (Azure) 6 month contract, scope to extend 600 - 625 P/D Inside IR35 Hybrid Active SC would be advantageous We are looking for a hands-on Cloud Engineering Lead with deep Microsoft Azure expertise to build, run and productise an enterprise Azure platform. You will turn approved architecture into policy-governed infrastructure delivered entirely through code and automated pipelines, make sure the platform is reliable and ope...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57399313",
+   "title": "Build & Deployment Engineer",
+   "company": " Deerfoot Recruitment Solutions Ltd",
+   "location": "EC2Y9AG",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": true,
+   "published": "28/09/2026",
+   "url": "https://www.reed.co.uk/jobs/build-deployment-engineer/57399313",
+   "description": "Build &amp; Deployment Engineer - C#/.NET, Octopus Deploy &amp; Secure Coding City of London - Hybrid (4 Days on-site, 1 day WFH each week) Inside IR35 Contract Are you a build and deployment engineer who can open up the C# code behind a pipeline and fix it yourself? That combination is exactly what's needed here. You'll join the Platform Engineering function of one of the world's largest financial groups, owning the on-premises toolchain that t...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {
@@ -541,20 +546,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57500269",
-   "title": "Azure Platform engineer",
-   "company": "Opus Recruitment Solutions Ltd",
-   "location": "Sheffield",
-   "contract": "Contract",
-   "salary": "500.0–530.0 GBP",
-   "remoteHint": false,
-   "published": "28/10/2026",
-   "url": "https://www.reed.co.uk/jobs/azure-platform-engineer/57500269",
-   "description": "Azure Platform Engineer 530 per day - Inside IR35 Sheffield - 3 days a week on site 3 months initially Key Skills &amp; Requirements Strong hands-on experience engineering and supporting Azure platforms at scale, including compute, storage, networking, identity, governance, RBAC, managed identities, ARM, and Azure Policy. Expert-level PowerShell automation experience, developing reusable modules, tooling, testing frameworks, and automation used ...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57464108",
    "title": "Platform Engineer",
    "company": "Ncounter",
@@ -565,6 +556,20 @@
    "published": "15/10/2026",
    "url": "https://www.reed.co.uk/jobs/platform-engineer/57464108",
    "description": "Platform Engineer (DV Cleared) | Contract 650- 750 per day | Outside IR35 | Corsham | 6-12 Months Ncounter is recruiting an experienced DV Cleared Platform Engineer to support a major cloud transformation programme within Defence. This is an opportunity to contribute to the development and delivery of secure, modern cloud infrastructure supporting critical government services. Working within a highly skilled engineering team, you'll take a hands...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57500269",
+   "title": "Azure Platform engineer",
+   "company": "Opus Recruitment Solutions Ltd",
+   "location": "Sheffield",
+   "contract": "Contract",
+   "salary": "500.0–530.0 GBP",
+   "remoteHint": false,
+   "published": "28/10/2026",
+   "url": "https://www.reed.co.uk/jobs/azure-platform-engineer/57500269",
+   "description": "Azure Platform Engineer 530 per day - Inside IR35 Sheffield - 3 days a week on site 3 months initially Key Skills &amp; Requirements Strong hands-on experience engineering and supporting Azure platforms at scale, including compute, storage, networking, identity, governance, RBAC, managed identities, ARM, and Azure Policy. Expert-level PowerShell automation experience, developing reusable modules, tooling, testing frameworks, and automation used ...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {
@@ -597,20 +602,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57424857",
-   "title": "Senior Platform Engineer",
-   "company": "Lorien",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": false,
-   "published": "05/10/2026",
-   "url": "https://www.reed.co.uk/jobs/senior-platform-engineer/57424857",
-   "description": "Senior Platform Engineer - DV Clearable - 5 Days On-Site Build and operate the platforms that make AI and machine learning work at scale We're looking for a Senior Platform Engineer to join our team and play a key role in designing and operating the platform that underpins AI and machine learning delivery . This is a hands-on senior platform role , focused on building robust, Kubernetes-based platforms that enable MLOps engineers, ML engineers, ...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57498604",
    "title": "Senior Platform Engineer",
    "company": "Lorien",
@@ -620,6 +611,20 @@
    "remoteHint": false,
    "published": "27/10/2026",
    "url": "https://www.reed.co.uk/jobs/senior-platform-engineer/57498604",
+   "description": "Senior Platform Engineer - DV Clearable - 5 Days On-Site Build and operate the platforms that make AI and machine learning work at scale We're looking for a Senior Platform Engineer to join our team and play a key role in designing and operating the platform that underpins AI and machine learning delivery . This is a hands-on senior platform role , focused on building robust, Kubernetes-based platforms that enable MLOps engineers, ML engineers, ...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57424857",
+   "title": "Senior Platform Engineer",
+   "company": "Lorien",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": false,
+   "published": "05/10/2026",
+   "url": "https://www.reed.co.uk/jobs/senior-platform-engineer/57424857",
    "description": "Senior Platform Engineer - DV Clearable - 5 Days On-Site Build and operate the platforms that make AI and machine learning work at scale We're looking for a Senior Platform Engineer to join our team and play a key role in designing and operating the platform that underpins AI and machine learning delivery . This is a hands-on senior platform role , focused on building robust, Kubernetes-based platforms that enable MLOps engineers, ML engineers, ...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
@@ -667,20 +672,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57427005",
-   "title": "Golang Engineer",
-   "company": "Vbeyond",
-   "location": "Bristol",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": false,
-   "published": "06/10/2026",
-   "url": "https://www.reed.co.uk/jobs/golang-engineer/57427005",
-   "description": "Job Summary We are looking for an experienced Golang Engineer to develop, maintain and troubleshoot secure Go-based microservices within a modern cloud-native environment. The successful candidate will have strong experience with Go, REST APIs, microservices, containerisation, Kubernetes and Helm , along with a solid understanding of secure coding, Agile development and continuous delivery practices. Key Responsibilities Develop, maintain and tr...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57523407",
    "title": "Application Architect",
    "company": "Advanced Resource Managers Limited",
@@ -691,6 +682,20 @@
    "published": "04/11/2026",
    "url": "https://www.reed.co.uk/jobs/application-architect/57523407",
    "description": "A leading consultancy is seeking an experienced Application Architect to define and drive the architecture of cloud-native business applications and data-driven solutions. This role will focus on designing secure, scalable, and resilient solutions within the Microsoft Azure ecosystem, with particular emphasis on Kubernetes-based platforms and integration with enterprise data services. You will work closely with both technical and business stakeh...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57427005",
+   "title": "Golang Engineer",
+   "company": "Vbeyond",
+   "location": "Bristol",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": false,
+   "published": "06/10/2026",
+   "url": "https://www.reed.co.uk/jobs/golang-engineer/57427005",
+   "description": "Job Summary We are looking for an experienced Golang Engineer to develop, maintain and troubleshoot secure Go-based microservices within a modern cloud-native environment. The successful candidate will have strong experience with Go, REST APIs, microservices, containerisation, Kubernetes and Helm , along with a solid understanding of secure coding, Agile development and continuous delivery practices. Key Responsibilities Develop, maintain and tr...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {

@@ -209,18 +209,102 @@ def fetch_reed(errors):
     return out
 
 
+# --- JobServe / CareerBoard via Apify (paid per result, optional) ----------
+# Actor: https://apify.com/fetchclub/jobserve-jobs-scraper (~$3 per 1,000 jobs).
+# Runs once a day with small caps so it stays inside Apify's free monthly credit.
+APIFY_ACTOR = "fetchclub~jobserve-jobs-scraper"
+APIFY_EVERY_HOURS = 23
+APIFY_MAX_USD_PER_SEARCH = 0.08
+APIFY_SEARCHES = [
+    {"website": "JobServe", "website_country": "United Kingdom", "keywords": "DevOps",
+     "job_type": "Contract", "remote_working": True, "date_posted": "Within 1 day", "max_results": 20},
+    {"website": "JobServe", "website_country": "United Kingdom", "keywords": "Kubernetes OR SRE",
+     "job_type": "Contract", "remote_working": True, "date_posted": "Within 1 day", "max_results": 10},
+    {"website": "JobServe", "website_country": "United States of America", "keywords": "DevOps",
+     "job_type": "Contract", "remote_working": True, "date_posted": "Within 1 day", "max_results": 10},
+    {"website": "CareerBoard", "website_country": "United Kingdom", "keywords": "DevOps",
+     "job_type": "Contract", "remote_working": True, "date_posted": "Within 1 day", "max_results": 10},
+]
+
+
+def fetch_apify(errors):
+    token = os.environ.get("APIFY_TOKEN")
+    if not token:
+        return []
+    out = []
+    for s in APIFY_SEARCHES:
+        url = (
+            f"https://api.apify.com/v2/acts/{APIFY_ACTOR}/run-sync-get-dataset-items"
+            f"?maxTotalChargeUsd={APIFY_MAX_USD_PER_SEARCH}&timeout=240"
+        )
+        label = f"{s['website']} {s['website_country']} {s['keywords']}"
+        try:
+            _, items = http(
+                url,
+                data=json.dumps(s).encode(),
+                headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json"},
+                method="POST",
+                timeout=290,
+            )
+        except urllib.error.HTTPError as e:
+            errors.append(f"Apify {label}: HTTP {e.code}")
+            continue
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"Apify {label}: {type(e).__name__}")
+            continue
+        for o in items or []:
+            title = o.get("title", "")
+            desc = o.get("description_text", "")
+            text = f"{title} {desc}"
+            if not DEVOPS_RE.search(text):
+                continue
+            ref = o.get("job_reference") or o.get("job_link") or title
+            out.append(
+                {
+                    "source": s["website"],
+                    "id": f"{s['website'].lower()}-{re.sub(r'[^A-Za-z0-9]+', '', str(ref))[:60]}",
+                    "title": title,
+                    "company": o.get("company_name") or o.get("posted_by") or "",
+                    "location": o.get("location", "") or s["website_country"],
+                    "contract": o.get("employment_type", "") or "Contract",
+                    "salary": o.get("salary", "") or o.get("salary_detail", ""),
+                    "remoteHint": True if s.get("remote_working") else bool(REMOTE_RE.search(text)),
+                    "published": o.get("posted_at") or o.get("posted_date", ""),
+                    "url": o.get("job_link", ""),
+                    "duration": o.get("duration", ""),
+                    "description": clean(desc),
+                }
+            )
+    return out
+
+
 def main():
     now = datetime.now(timezone.utc)
     errors = []
-    fresh = fetch_ft(errors) + fetch_reed(errors)
-
-    old = {}
+    old_doc = {}
     if os.path.exists(OUT):
         try:
             with open(OUT, encoding="utf-8") as f:
-                old = {j["id"]: j for j in json.load(f).get("jobs", [])}
+                old_doc = json.load(f)
         except Exception:  # noqa: BLE001
-            old = {}
+            old_doc = {}
+    old = {j["id"]: j for j in old_doc.get("jobs", [])}
+
+    fresh = fetch_ft(errors) + fetch_reed(errors)
+
+    # Apify (paid per result): run at most once every APIFY_EVERY_HOURS.
+    apify_at = old_doc.get("apifyAt", "")
+    due = True
+    if apify_at:
+        try:
+            due = now - datetime.fromisoformat(apify_at) >= timedelta(hours=APIFY_EVERY_HOURS)
+        except ValueError:
+            due = True
+    if os.environ.get("FORCE_APIFY"):
+        due = True
+    if due and os.environ.get("APIFY_TOKEN"):
+        fresh += fetch_apify(errors)
+        apify_at = now.isoformat(timespec="seconds")
 
     jobs = {}
     for j in fresh:
@@ -244,6 +328,7 @@ def main():
         counts[j["source"]] = counts.get(j["source"], 0) + 1
     doc = {
         "generatedAt": now.isoformat(timespec="seconds"),
+        "apifyAt": apify_at,
         "counts": counts,
         "errors": errors,
         "jobs": ordered,

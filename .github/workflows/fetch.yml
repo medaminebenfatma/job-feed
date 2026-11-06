@@ -3,7 +3,12 @@ name: Fetch jobs
 on:
   schedule:
     - cron: "17 */4 * * *"   # every 4 hours
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      force_apify:
+        description: "Run the paid Apify searches now"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -15,7 +20,7 @@ concurrency:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,6 +31,8 @@ jobs:
           FT_CLIENT_ID: ${{ secrets.FT_CLIENT_ID }}
           FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
           REED_API_KEY: ${{ secrets.REED_API_KEY }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          FORCE_APIFY: ${{ inputs.force_apify }}
         run: python fetch_jobs.py
       - name: Commit jobs.json if changed
         run: |

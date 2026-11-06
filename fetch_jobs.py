@@ -284,6 +284,60 @@ def fetch_apify(errors):
     return out
 
 
+# --- Indeed via the hosted omkar.cloud Indeed Scraper API (optional) --------
+# Needs OMKAR_API_KEY and OMKAR_INDEED_URL (the full ".../jobs/search" address
+# shown in the API playground). Runs at most once a day, like Apify.
+INDEED_SEARCHES = [
+    {"query": "devops", "country": "FR", "location": "remote", "job_type": "freelance", "date_posted": "last_3_days"},
+    {"query": "devops", "country": "FR", "location": "Nice", "date_posted": "last_3_days"},
+    {"query": "devops", "country": "FR", "location": "Monaco", "date_posted": "last_3_days"},
+    {"query": "sre kubernetes", "country": "FR", "location": "remote", "date_posted": "last_3_days"},
+    {"query": "devops", "country": "GB", "work_setting": "remote", "job_type": "contract", "date_posted": "last_3_days"},
+]
+
+
+def fetch_indeed(errors):
+    key, base = os.environ.get("OMKAR_API_KEY"), os.environ.get("OMKAR_INDEED_URL")
+    if not key or not base:
+        return []
+    out = []
+    for q in INDEED_SEARCHES:
+        url = base + ("&" if "?" in base else "?") + urllib.parse.urlencode(q)
+        try:
+            _, js = http(url, headers={"API-Key": key})
+        except urllib.error.HTTPError as e:
+            errors.append(f"Indeed {q['query']} {q['country']}: HTTP {e.code}")
+            if e.code in (401, 403, 429):
+                break
+            continue
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"Indeed {q['query']}: {type(e).__name__}")
+            continue
+        for o in (js or {}).get("jobs", []):
+            title = o.get("title", "")
+            text = title
+            if not DEVOPS_RE.search(text):
+                continue
+            sal = o.get("salary") or {}
+            loc = o.get("location") or {}
+            out.append({
+                "source": "Indeed",
+                "id": f"indeed-{o.get('id')}",
+                "title": title,
+                "company": (o.get("company") or {}).get("name", ""),
+                "location": loc.get("display_name", "") if isinstance(loc, dict) else str(loc),
+                "contract": q.get("job_type", ""),
+                "salary": sal.get("text", "") if isinstance(sal, dict) else "",
+                "remoteHint": q.get("location") == "remote" or q.get("work_setting") == "remote",
+                "published": o.get("date_published", ""),
+                "url": o.get("link", ""),
+                "description": "",
+                "country": q["country"],
+            })
+        time.sleep(0.5)
+    return out
+
+
 def main():
     now = datetime.now(timezone.utc)
     errors = []
@@ -308,8 +362,9 @@ def main():
             due = True
     if os.environ.get("FORCE_APIFY"):
         due = True
-    if due and os.environ.get("APIFY_TOKEN"):
+    if due and (os.environ.get("APIFY_TOKEN") or os.environ.get("OMKAR_API_KEY")):
         fresh += fetch_apify(errors)
+        fresh += fetch_indeed(errors)
         apify_at = now.isoformat(timespec="seconds")
 
     jobs = {}

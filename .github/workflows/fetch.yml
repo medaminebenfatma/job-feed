@@ -32,6 +32,8 @@ jobs:
           FT_CLIENT_SECRET: ${{ secrets.FT_CLIENT_SECRET }}
           REED_API_KEY: ${{ secrets.REED_API_KEY }}
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+          OMKAR_API_KEY: ${{ secrets.OMKAR_API_KEY }}
+          OMKAR_INDEED_URL: ${{ secrets.OMKAR_INDEED_URL }}
           FORCE_APIFY: ${{ inputs.force_apify }}
         run: python fetch_jobs.py
       - name: Commit jobs.json if changed

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-07T20:13:55+00:00",
+ "generatedAt": "2026-11-07T23:38:40+00:00",
  "apifyAt": "2026-11-07T20:13:55+00:00",
  "counts": {
   "JobServe": 35,
@@ -450,6 +450,20 @@
   },
   {
    "source": "Reed",
+   "id": "reed-57467956",
+   "title": "Cloud Platform Network Engineer",
+   "company": "Lorien",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": false,
+   "published": "16/10/2026",
+   "url": "https://www.reed.co.uk/jobs/cloud-platform-network-engineer/57467956",
+   "description": "Cloud Platform Network Engineer We are recruiting for a Platform Network Engineer with strong troubleshooting experience to join one of our Insurance clients on a 6-month contract. Inside IR35 Hybrid Responsibilities: Troubleshoot connectivity, routing, DNS, and performance issues across Azure and hybrid environments, perform root cause analysis, and document findings and fixes. Resolve issues with existing network deployments, including virtual...",
+   "firstSeen": "2026-11-06T18:59:16+00:00"
+  },
+  {
+   "source": "Reed",
    "id": "reed-57441669",
    "title": "Business Analyst",
    "company": "Hays Specialist Recruitment Limited",
@@ -460,6 +474,20 @@
    "published": "09/10/2026",
    "url": "https://www.reed.co.uk/jobs/business-analyst/57441669",
    "description": "Business Analyst - Public Sector - Remote - Outside IR35 - Edinburgh Base - 12 Month engagement - 265 + VAT An exciting opportunity has arisen to join an organisation delivering digital and data solutions within a technically focused environment.The GIS and Data team is responsible for managing and delivering an integrated spatial platform supporting operational and strategic services. The technology environment includes Esri ArcGIS Enterprise, ...",
+   "firstSeen": "2026-11-06T18:59:16+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57449747",
+   "title": "Cloud Solutions Architect - AWS/Azure",
+   "company": "Lorien",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "650.0–650.0 GBP",
+   "remoteHint": false,
+   "published": "12/10/2026",
+   "url": "https://www.reed.co.uk/jobs/cloud-solutions-architect-aws-azure/57449747",
+   "description": "Cloud Solution Architect City of London- Onsite 2/3 days a week 6 month contarct Inside of IR35 650pd WearelookingforaSeniorCloudSolutionsArchitect to lead the design and delivery of secure, scalable, enterprisecloudsolutions. Key Responsibilities Designandgoverncloudandinfrastructurearchitectures. Leadcloudinitiativesacross AWS, Azure or hybrid environments. Developprivatecloud,compute,orchestrationandhybridstorage solutions. DriveInfrastructur...",
    "firstSeen": "2026-11-06T18:59:16+00:00"
   },
   {
@@ -492,34 +520,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57467956",
-   "title": "Cloud Platform Network Engineer",
-   "company": "Lorien",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": false,
-   "published": "16/10/2026",
-   "url": "https://www.reed.co.uk/jobs/cloud-platform-network-engineer/57467956",
-   "description": "Cloud Platform Network Engineer We are recruiting for a Platform Network Engineer with strong troubleshooting experience to join one of our Insurance clients on a 6-month contract. Inside IR35 Hybrid Responsibilities: Troubleshoot connectivity, routing, DNS, and performance issues across Azure and hybrid environments, perform root cause analysis, and document findings and fixes. Resolve issues with existing network deployments, including virtual...",
-   "firstSeen": "2026-11-06T18:59:16+00:00"
-  },
-  {
-   "source": "Reed",
-   "id": "reed-57449747",
-   "title": "Cloud Solutions Architect - AWS/Azure",
-   "company": "Lorien",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "650.0–650.0 GBP",
-   "remoteHint": false,
-   "published": "12/10/2026",
-   "url": "https://www.reed.co.uk/jobs/cloud-solutions-architect-aws-azure/57449747",
-   "description": "Cloud Solution Architect City of London- Onsite 2/3 days a week 6 month contarct Inside of IR35 650pd WearelookingforaSeniorCloudSolutionsArchitect to lead the design and delivery of secure, scalable, enterprisecloudsolutions. Key Responsibilities Designandgoverncloudandinfrastructurearchitectures. Leadcloudinitiativesacross AWS, Azure or hybrid environments. Developprivatecloud,compute,orchestrationandhybridstorage solutions. DriveInfrastructur...",
-   "firstSeen": "2026-11-06T18:59:16+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57502605",
    "title": "Cloud Technical Delivery Manager",
    "company": "TXP Technology x People",
@@ -548,20 +548,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57434022",
-   "title": "Lead Engineer",
-   "company": "Harnham - Data & Analytics Recruitment",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "550.0–550.0 GBP",
-   "remoteHint": false,
-   "published": "07/10/2026",
-   "url": "https://www.reed.co.uk/jobs/lead-engineer/57434022",
-   "description": "Staff Engineer, Premium Finance Integration South West London (Hybrid) | Outside IR35 | 550 per day This is a unique opportunity to lead the end-to-end replacement of a business-critical premium finance platform within a regulated environment. You will take ownership from discovery through to delivery, defining the technical strategy and building the solution while ensuring uninterrupted service for customers and accurate financial reporting thr...",
-   "firstSeen": "2026-11-06T18:59:16+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57465448",
    "title": "R Developer",
    "company": "Sanderson ",
@@ -572,6 +558,20 @@
    "published": "16/10/2026",
    "url": "https://www.reed.co.uk/jobs/r-developer/57465448",
    "description": "We are looking for an experienced Advanced R Developer / Software Engineer to support the modernisation of complex, business-critical analytical and reporting applications. The role will focus on upgrading existing R-based tooling onto modern platforms, reducing technical debt and ensuring established business outputs remain accurate and consistent throughout major system and code changes. Key Responsibilities Develop, maintain and refactor comp...",
+   "firstSeen": "2026-11-06T18:59:16+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57434022",
+   "title": "Lead Engineer",
+   "company": "Harnham - Data & Analytics Recruitment",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "550.0–550.0 GBP",
+   "remoteHint": false,
+   "published": "07/10/2026",
+   "url": "https://www.reed.co.uk/jobs/lead-engineer/57434022",
+   "description": "Staff Engineer, Premium Finance Integration South West London (Hybrid) | Outside IR35 | 550 per day This is a unique opportunity to lead the end-to-end replacement of a business-critical premium finance platform within a regulated environment. You will take ownership from discovery through to delivery, defining the technical strategy and building the solution while ensuring uninterrupted service for customers and accurate financial reporting thr...",
    "firstSeen": "2026-11-06T18:59:16+00:00"
   },
   {
@@ -674,20 +674,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57540271",
-   "title": "PKI Security Engineer",
-   "company": "INTEC SELECT LIMITED",
-   "location": "SE19SG",
-   "contract": "Contract",
-   "salary": "600.0–700.0 GBP",
-   "remoteHint": false,
-   "published": "06/11/2026",
-   "url": "https://www.reed.co.uk/jobs/pki-security-engineer/57540271",
-   "description": "PKI Security Engineer / CLM Implementation Engineer | Contract | EMEA Financial Services I’m hiring a senior PKI engineer to lead a Certificate Lifecycle Management (CLM) rollout across EMEA entities at a major global financial institution. This is a hands-on delivery role, not BAU certificate admin. You’ll take the platform from design and pilot through production rollout and handover, and start building the groundwork for post-quantum cryptogr...",
-   "firstSeen": "2026-11-06T18:59:16+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57488632",
    "title": "Senior Java Engineer",
    "company": "Forward Role",
@@ -698,6 +684,20 @@
    "published": "23/10/2026",
    "url": "https://www.reed.co.uk/jobs/senior-java-engineer/57488632",
    "description": "Senior Java Engineer: 6 month contract. Outside IR35, 2 days a week in Manchester. I'm looking for a senior Java Engineer to join a small team working on building a load of new backend services for an existing platform. The role requires someone who can be in office a couple of days a week to collaborate with the small engineering and product team. What you’ll be doing Building event-driven services and integrations on Kafka Deploying and runnin...",
+   "firstSeen": "2026-11-06T18:59:16+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57540271",
+   "title": "PKI Security Engineer",
+   "company": "INTEC SELECT LIMITED",
+   "location": "SE19SG",
+   "contract": "Contract",
+   "salary": "600.0–700.0 GBP",
+   "remoteHint": false,
+   "published": "06/11/2026",
+   "url": "https://www.reed.co.uk/jobs/pki-security-engineer/57540271",
+   "description": "PKI Security Engineer / CLM Implementation Engineer | Contract | EMEA Financial Services I’m hiring a senior PKI engineer to lead a Certificate Lifecycle Management (CLM) rollout across EMEA entities at a major global financial institution. This is a hands-on delivery role, not BAU certificate admin. You’ll take the platform from design and pilot through production rollout and handover, and start building the groundwork for post-quantum cryptogr...",
    "firstSeen": "2026-11-06T18:59:16+00:00"
   },
   {
@@ -786,20 +786,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57498462",
-   "title": "Senior Golang Developer",
-   "company": "Salt Search",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "340.0–340.0 GBP",
-   "remoteHint": false,
-   "published": "27/10/2026",
-   "url": "https://www.reed.co.uk/jobs/senior-golang-developer/57498462",
-   "description": "We're looking for a talented Senior Golang Developer to join an exciting project building a modern, globally scalable Loyalty &amp; Benefits platform. You'll work within an Agile engineering team, developing high-performance microservices and APIs using modern cloud-native technologies. What we're looking for: Strong commercial Golang experience - essential Microservices architecture and RESTful APIs Event-driven systems - Kafka, RabbitMQ or sim...",
-   "firstSeen": "2026-11-06T18:59:16+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57457095",
    "title": "Infrastructure Solution Architect - Distributed Edge Platforms",
    "company": "Access Computer Consulting plc",
@@ -828,6 +814,20 @@
   },
   {
    "source": "Reed",
+   "id": "reed-57498462",
+   "title": "Senior Golang Developer",
+   "company": "Salt Search",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "340.0–340.0 GBP",
+   "remoteHint": false,
+   "published": "27/10/2026",
+   "url": "https://www.reed.co.uk/jobs/senior-golang-developer/57498462",
+   "description": "We're looking for a talented Senior Golang Developer to join an exciting project building a modern, globally scalable Loyalty &amp; Benefits platform. You'll work within an Agile engineering team, developing high-performance microservices and APIs using modern cloud-native technologies. What we're looking for: Strong commercial Golang experience - essential Microservices architecture and RESTful APIs Event-driven systems - Kafka, RabbitMQ or sim...",
+   "firstSeen": "2026-11-06T18:59:16+00:00"
+  },
+  {
+   "source": "Reed",
    "id": "reed-57519642",
    "title": "SC Cleared Typescript Engineer",
    "company": "Opus Recruitment Solutions Ltd",
@@ -842,20 +842,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57505084",
-   "title": "Lead Backend Engineer",
-   "company": "INTEC SELECT LIMITED",
-   "location": "SE19SG",
-   "contract": "Contract",
-   "salary": "650.0–750.0 GBP",
-   "remoteHint": false,
-   "published": "29/10/2026",
-   "url": "https://www.reed.co.uk/jobs/lead-backend-engineer/57505084",
-   "description": "Lead Back End Developer - Contract role - London Overview A growing, data-driven organisation is looking for a Lead Back End Developer to shape and deliver the services that sit at the heart of its platform. You’ll lead a team of engineers, own technical direction and stay hands-on in the code. The stack is flexible (Python, C# and others), so strong engineering fundamentals matter more than any one language. Responsibilities Lead the design and...",
-   "firstSeen": "2026-11-06T18:59:16+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57448821",
    "title": "Senior Linux & Python Infrastructure Engineer",
    "company": "Hays Specialist Recruitment Limited",
@@ -866,6 +852,20 @@
    "published": "12/10/2026",
    "url": "https://www.reed.co.uk/jobs/senior-linux-python-infrastructure-engineer/57448821",
    "description": "Senior Linux &amp; Python Infrastructure Engineer Up to 550pd (Inside IR35) 6-month contract Glasgow / 3 days onsite My client is seeking an experienced Infrastructure Engineer with strong Linux and Python expertise to support the development, integration and maintenance of large-scale enterprise infrastructure platforms. The role combines infrastructure engineering, automation, security remediation and storage technologies. Key Skills Strong Li...",
+   "firstSeen": "2026-11-06T18:59:16+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57505084",
+   "title": "Lead Backend Engineer",
+   "company": "INTEC SELECT LIMITED",
+   "location": "SE19SG",
+   "contract": "Contract",
+   "salary": "650.0–750.0 GBP",
+   "remoteHint": false,
+   "published": "29/10/2026",
+   "url": "https://www.reed.co.uk/jobs/lead-backend-engineer/57505084",
+   "description": "Lead Back End Developer - Contract role - London Overview A growing, data-driven organisation is looking for a Lead Back End Developer to shape and deliver the services that sit at the heart of its platform. You’ll lead a team of engineers, own technical direction and stay hands-on in the code. The stack is flexible (Python, C# and others), so strong engineering fundamentals matter more than any one language. Responsibilities Lead the design and...",
    "firstSeen": "2026-11-06T18:59:16+00:00"
   },
   {
@@ -1080,6 +1080,20 @@
   },
   {
    "source": "Reed",
+   "id": "reed-57522452",
+   "title": "Data Platform Project Manager (Active SC Clearance required)",
+   "company": "Hays Specialist Recruitment Limited",
+   "location": "TA11AA",
+   "contract": "Contract",
+   "salary": "630.0–630.0 GBP",
+   "remoteHint": false,
+   "published": "03/11/2026",
+   "url": "https://www.reed.co.uk/jobs/data-platform-project-manager-active-sc-clearance-required/57522452",
+   "description": "630 per day 12 months! Taunton, Somerset UK Active SC clearance is essential. Candidates must already hold active SC clearance, and applications without it cannot be considered. Please include the name of your sponsor and your clearance reference ID in your CV. Your new organisation Some organisations write strategy. This one builds it. A UK public-sector body with a sharp corporate plan has set up a dedicated portfolio office to turn ambition i...",
+   "firstSeen": "2026-11-06T18:59:16+00:00"
+  },
+  {
+   "source": "Reed",
    "id": "reed-57488464",
    "title": "Data Engineer",
    "company": "Hays Specialist Recruitment Limited",
@@ -1090,20 +1104,6 @@
    "published": "23/10/2026",
    "url": "https://www.reed.co.uk/jobs/data-engineer/57488464",
    "description": "Data Engineer - AWS / DataStage / Data Platforms Rate: 520 per day Location: UK, Remote Working arrangement: Remote Residency requirement: Minimum 5 years' continuous/unbroken UK residency - mandatory Your new company You'll be working with IBM on an urgent public-sector programme, supporting the delivery of enterprise-scale data platforms and solutions. Your new role As a Data Engineer, you'll work across the data lifecycle, with a strong focus...",
-   "firstSeen": "2026-11-06T18:59:16+00:00"
-  },
-  {
-   "source": "Reed",
-   "id": "reed-57405525",
-   "title": "Data Engineer",
-   "company": "Oscar Technology",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "450.0–500.0 GBP",
-   "remoteHint": false,
-   "published": "30/09/2026",
-   "url": "https://www.reed.co.uk/jobs/data-engineer/57405525",
-   "description": "Data Engineer | 450- 500p/day (Inside IR35) | London (Hybrid, 1-2 days per week on site) | Energy/highly regulated environments | Azure/Microsoft Fabric Our client is looking for an experienced Data Engineer to support the ongoing maintenance, enhancement and development of their operational data platform within a highly regulated Energy from Waste (EfW) environment. We're looking for someone who will manage and improve the flow of operational, ...",
    "firstSeen": "2026-11-06T18:59:16+00:00"
   },
   {
@@ -1122,6 +1122,20 @@
   },
   {
    "source": "Reed",
+   "id": "reed-57405525",
+   "title": "Data Engineer",
+   "company": "Oscar Technology",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "450.0–500.0 GBP",
+   "remoteHint": false,
+   "published": "30/09/2026",
+   "url": "https://www.reed.co.uk/jobs/data-engineer/57405525",
+   "description": "Data Engineer | 450- 500p/day (Inside IR35) | London (Hybrid, 1-2 days per week on site) | Energy/highly regulated environments | Azure/Microsoft Fabric Our client is looking for an experienced Data Engineer to support the ongoing maintenance, enhancement and development of their operational data platform within a highly regulated Energy from Waste (EfW) environment. We're looking for someone who will manage and improve the flow of operational, ...",
+   "firstSeen": "2026-11-06T18:59:16+00:00"
+  },
+  {
+   "source": "Reed",
    "id": "reed-57444672",
    "title": "Infrastructure Engineer",
    "company": "Sanderson ",
@@ -1132,20 +1146,6 @@
    "published": "11/10/2026",
    "url": "https://www.reed.co.uk/jobs/infrastructure-engineer/57444672",
    "description": "Infrastructure Engineer Hybrid Working 2 days per week onsite Initial 6-month contract Outside of IR35 Our client is seeking an experienced Infrastructure Engineer to help deliver key initiatives across enterprise infrastructure, resilience, security and platform modernisation. This role will suit an engineer who is comfortable translating high-level technical requirements into practical, supportable solutions. You will lead infrastructure proje...",
-   "firstSeen": "2026-11-06T18:59:16+00:00"
-  },
-  {
-   "source": "Reed",
-   "id": "reed-57522452",
-   "title": "Data Platform Project Manager (Active SC Clearance required)",
-   "company": "Hays Specialist Recruitment Limited",
-   "location": "TA11AA",
-   "contract": "Contract",
-   "salary": "630.0–630.0 GBP",
-   "remoteHint": false,
-   "published": "03/11/2026",
-   "url": "https://www.reed.co.uk/jobs/data-platform-project-manager-active-sc-clearance-required/57522452",
-   "description": "630 per day 12 months! Taunton, Somerset UK Active SC clearance is essential. Candidates must already hold active SC clearance, and applications without it cannot be considered. Please include the name of your sponsor and your clearance reference ID in your CV. Your new organisation Some organisations write strategy. This one builds it. A UK public-sector body with a sharp corporate plan has set up a dedicated portfolio office to turn ambition i...",
    "firstSeen": "2026-11-06T18:59:16+00:00"
   },
   {
@@ -1220,20 +1220,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57523558",
-   "title": "Lead Data Engineer",
-   "company": "Sanderson ",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": false,
-   "published": "04/11/2026",
-   "url": "https://www.reed.co.uk/jobs/lead-data-engineer/57523558",
-   "description": "Job Title: Lead Data Engineer Location: London / Hybrid Position Type: 6 Month Contract - Outside IR35 About We're working with a major financial services organisation undergoing a large-scale data transformation programme. They are looking for a hands-on Lead Data Engineer to help build and scale an enterprise data platform, working closely with senior architects and engineering teams to deliver modern data capabilities across a complex environ...",
-   "firstSeen": "2026-11-06T18:59:16+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57430805",
    "title": "Security Data Engineer",
    "company": "Vbeyond",
@@ -1244,6 +1230,20 @@
    "published": "07/10/2026",
    "url": "https://www.reed.co.uk/jobs/security-data-engineer/57430805",
    "description": "Role Overview We are seeking an experienced Security Data Engineer to design and deliver scalable security data platforms, pipelines and integrations. The role will enable security analytics, machine learning and Security Knowledge Graph use cases by providing reliable, governed and timely security data across enterprise environments. Key Responsibilities Build scalable batch and streaming data pipelines for security telemetry and enterprise dat...",
+   "firstSeen": "2026-11-06T18:59:16+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57523558",
+   "title": "Lead Data Engineer",
+   "company": "Sanderson ",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": false,
+   "published": "04/11/2026",
+   "url": "https://www.reed.co.uk/jobs/lead-data-engineer/57523558",
+   "description": "Job Title: Lead Data Engineer Location: London / Hybrid Position Type: 6 Month Contract - Outside IR35 About We're working with a major financial services organisation undergoing a large-scale data transformation programme. They are looking for a hands-on Lead Data Engineer to help build and scale an enterprise data platform, working closely with senior architects and engineering teams to deliver modern data capabilities across a complex environ...",
    "firstSeen": "2026-11-06T18:59:16+00:00"
   },
   {
@@ -2209,6 +2209,20 @@
   },
   {
    "source": "Reed",
+   "id": "reed-57456253",
+   "title": "DevOps Consultant",
+   "company": "Opus Recruitment Solutions Ltd",
+   "location": "Greater Manchester",
+   "contract": "Contract",
+   "salary": "500.0–500.0 GBP",
+   "remoteHint": false,
+   "published": "14/10/2026",
+   "url": "https://www.reed.co.uk/jobs/devops-consultant/57456253",
+   "description": "DevOps Consultant | 6 Month initial contract | 2 Days onsite per week into Manchester | 500 InsideIR35 Responsibilities: Design, implement, and support cloud-native solutions on Microsoft Azure across a range of customer engagements and industry sectors. Deliver across the full solution lifecycle, including architecture, implementation, automation, optimisation, and operational enablement. Build and maintain modern DevOps capabilities, including...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
    "id": "reed-57432395",
    "title": "DevOps Engineer",
    "company": "Hays Specialist Recruitment Limited",
@@ -2233,20 +2247,6 @@
    "published": "04/11/2026",
    "url": "https://www.reed.co.uk/jobs/devops-engineer/57527969",
    "description": "DevOps Engineer Contract Location: North London Start date: ASAP Are you an experienced DevOps professional looking for your next challenge in a dynamic organisation? About the Role You'll join the IT team at a further education provider, supporting the delivery, development and improvement of DevOps services, systems and IT projects. You'll help keep systems reliable for staff and students across teaching, learning and day-to-day operations, pr...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
-   "id": "reed-57456253",
-   "title": "DevOps Consultant",
-   "company": "Opus Recruitment Solutions Ltd",
-   "location": "Greater Manchester",
-   "contract": "Contract",
-   "salary": "500.0–500.0 GBP",
-   "remoteHint": false,
-   "published": "14/10/2026",
-   "url": "https://www.reed.co.uk/jobs/devops-consultant/57456253",
-   "description": "DevOps Consultant | 6 Month initial contract | 2 Days onsite per week into Manchester | 500 InsideIR35 Responsibilities: Design, implement, and support cloud-native solutions on Microsoft Azure across a range of customer engagements and industry sectors. Deliver across the full solution lifecycle, including architecture, implementation, automation, optimisation, and operational enablement. Build and maintain modern DevOps capabilities, including...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {
@@ -2279,20 +2279,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57500265",
-   "title": "Senior DevOps Engineer",
-   "company": "\t R3vamp Limited",
-   "location": "Reading",
-   "contract": "Contract",
-   "salary": "50000.0–70000.0 GBP",
-   "remoteHint": true,
-   "published": "28/10/2026",
-   "url": "https://www.reed.co.uk/jobs/senior-devops-engineer/57500265",
-   "description": "I am looking for a Senior DevOps Engineer to join an existing client to work with the engineering team managing CI/CD pipelines, infrastructure, and AWS cloud platforms. This is a fully remote position, although occasional on-site visits to the office outside London, would be preferred. My client is going through a large project migration of two large platforms, any prior experience is ideal. This is a 6 months Fixed Term Contract and does not o...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57501358",
    "title": "DevOps Engineer, Hybrid",
    "company": "Sanderson ",
@@ -2303,6 +2289,20 @@
    "published": "28/10/2026",
    "url": "https://www.reed.co.uk/jobs/devops-engineer-hybrid/57501358",
    "description": "DevOps Engineer (Platform Automation) 6-Month Contract | 500- 550 per day | Inside IR35 | Hybrid Working We're supporting a large enterprise organisation embarking on a major platform engineering and automation transformation. They're looking for an experienced DevOps Engineer to join a high-performing team focused on modernising software delivery, security automation and cloud platforms. The Role Design, build and enhance enterprise CI/CD platf...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57500265",
+   "title": "Senior DevOps Engineer",
+   "company": "\t R3vamp Limited",
+   "location": "Reading",
+   "contract": "Contract",
+   "salary": "50000.0–70000.0 GBP",
+   "remoteHint": true,
+   "published": "28/10/2026",
+   "url": "https://www.reed.co.uk/jobs/senior-devops-engineer/57500265",
+   "description": "I am looking for a Senior DevOps Engineer to join an existing client to work with the engineering team managing CI/CD pipelines, infrastructure, and AWS cloud platforms. This is a fully remote position, although occasional on-site visits to the office outside London, would be preferred. My client is going through a large project migration of two large platforms, any prior experience is ideal. This is a 6 months Fixed Term Contract and does not o...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {
@@ -2363,20 +2363,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57498611",
-   "title": "Senior AI DevOps Engineer",
-   "company": "Lorien",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": false,
-   "published": "27/10/2026",
-   "url": "https://www.reed.co.uk/jobs/senior-ai-devops-engineer/57498611",
-   "description": "Senior AI-Enabled DevOps Engineer / DV Clearable / 5 days a week on-site Build and operate modern software systems where AI meets production reality We're looking for a Senior AI-Enabled DevOps Engineer to join a growing engineering capability working on complex, important software systems that increasingly embed AI to improve delivery, decision-making, and operational effectiveness . This is a hands-on senior engineering role for someone who en...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57424912",
    "title": "Senior AI DevOps Engineer",
    "company": "Lorien",
@@ -2400,6 +2386,20 @@
    "remoteHint": false,
    "published": "05/10/2026",
    "url": "https://www.reed.co.uk/jobs/senior-ai-devops-engineer/57424866",
+   "description": "Senior AI-Enabled DevOps Engineer / DV Clearable / 5 days a week on-site Build and operate modern software systems where AI meets production reality We're looking for a Senior AI-Enabled DevOps Engineer to join a growing engineering capability working on complex, important software systems that increasingly embed AI to improve delivery, decision-making, and operational effectiveness . This is a hands-on senior engineering role for someone who en...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57498611",
+   "title": "Senior AI DevOps Engineer",
+   "company": "Lorien",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": false,
+   "published": "27/10/2026",
+   "url": "https://www.reed.co.uk/jobs/senior-ai-devops-engineer/57498611",
    "description": "Senior AI-Enabled DevOps Engineer / DV Clearable / 5 days a week on-site Build and operate modern software systems where AI meets production reality We're looking for a Senior AI-Enabled DevOps Engineer to join a growing engineering capability working on complex, important software systems that increasingly embed AI to improve delivery, decision-making, and operational effectiveness . This is a hands-on senior engineering role for someone who en...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
@@ -2643,20 +2643,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57504722",
-   "title": "Cloud Engineering Lead (Azure)",
-   "company": "TXP Technology x People",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "600.0–625.0 GBP",
-   "remoteHint": false,
-   "published": "29/10/2026",
-   "url": "https://www.reed.co.uk/jobs/cloud-engineering-lead-azure/57504722",
-   "description": "Cloud Engineering Lead (Azure) 6 month contract, scope to extend 600 - 625 P/D Inside IR35 Hybrid Active SC would be advantageous We are looking for a hands-on Cloud Engineering Lead with deep Microsoft Azure expertise to build, run and productise an enterprise Azure platform. You will turn approved architecture into policy-governed infrastructure delivered entirely through code and automated pipelines, make sure the platform is reliable and ope...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57486924",
    "title": "Data Engineer - Data Modelling",
    "company": "Hays Specialist Recruitment Limited",
@@ -2667,6 +2653,20 @@
    "published": "23/10/2026",
    "url": "https://www.reed.co.uk/jobs/data-engineer-data-modelling/57486924",
    "description": "Data Engineer - Data Modelling Sector: Automotive / Financial Services Programme: NextGen DevOps Rate: 470 per day Location: UK Remote IR35 status: Inside IR35 Your new company You'll be supporting a major transformation programme within a complex automotive and financial services environment.The programme will deliver both Operations and Development services and support several significant transformation initiatives, including mainframe moderni...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57504722",
+   "title": "Cloud Engineering Lead (Azure)",
+   "company": "TXP Technology x People",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "600.0–625.0 GBP",
+   "remoteHint": false,
+   "published": "29/10/2026",
+   "url": "https://www.reed.co.uk/jobs/cloud-engineering-lead-azure/57504722",
+   "description": "Cloud Engineering Lead (Azure) 6 month contract, scope to extend 600 - 625 P/D Inside IR35 Hybrid Active SC would be advantageous We are looking for a hands-on Cloud Engineering Lead with deep Microsoft Azure expertise to build, run and productise an enterprise Azure platform. You will turn approved architecture into policy-governed infrastructure delivered entirely through code and automated pipelines, make sure the platform is reliable and ope...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {
@@ -2825,20 +2825,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57499050",
-   "title": "Machine Learning Engineer",
-   "company": "SR2",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "500.0–625.0 GBP",
-   "remoteHint": false,
-   "published": "27/10/2026",
-   "url": "https://www.reed.co.uk/jobs/machine-learning-engineer/57499050",
-   "description": "Machine Learning / ML Ops Engineer Outside IR35: 500 - 625 p/d Active SC Clearance Required 4 days a week into East London 6 months initial contract, long term programme The Role We're looking for a Senior MLOps Engineer to build and run the infrastructure that takes machine learning models from research into production. You'll work alongside AI developers, software engineers and technical leadership to turn R&amp;D into reliable, deployable pro...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57463221",
    "title": "Security Engineer, DevSecOps, AWS, EKS",
    "company": "Sanderson ",
@@ -2849,6 +2835,20 @@
    "published": "15/10/2026",
    "url": "https://www.reed.co.uk/jobs/security-engineer-devsecops-aws-eks/57463221",
    "description": "Security Engineer, AWS, DevSecOps Day rate: 650 per day (Outside IR35) Location: London 1 day week Role: Security Engineer Length: 6 months We're supporting a major transformation programme and are looking for a Security Engineer to help deliver and maintain security controls across multiple technology workstreams. Working closely with senior security specialists, you'll play a key role in securing cloud platforms, improving DevSecOps processes,...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57499050",
+   "title": "Machine Learning Engineer",
+   "company": "SR2",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "500.0–625.0 GBP",
+   "remoteHint": false,
+   "published": "27/10/2026",
+   "url": "https://www.reed.co.uk/jobs/machine-learning-engineer/57499050",
+   "description": "Machine Learning / ML Ops Engineer Outside IR35: 500 - 625 p/d Active SC Clearance Required 4 days a week into East London 6 months initial contract, long term programme The Role We're looking for a Senior MLOps Engineer to build and run the infrastructure that takes machine learning models from research into production. You'll work alongside AI developers, software engineers and technical leadership to turn R&amp;D into reliable, deployable pro...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {
@@ -3049,20 +3049,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57478042",
-   "title": "Infrastructure Engineer / Cloud Engineer",
-   "company": "AWD online",
-   "location": "BS348XX",
-   "contract": "Contract",
-   "salary": "50000.0–60000.0 GBP",
-   "remoteHint": false,
-   "published": "20/10/2026",
-   "url": "https://www.reed.co.uk/jobs/infrastructure-engineer-cloud-engineer/57478042",
-   "description": "Senior Cloud Infrastructure Engineer Take on a senior technical role spanning third-line support, complex Microsoft cloud environments and enterprise projects, with ownership of challenging issues and the opportunity to develop SME-level expertise. If you’ve also worked in the following roles, we’d also like to hear from you: Senior Cloud Engineer, Senior Infrastructure Engineer, Cloud Infrastructure Engineer, 3rd Line Infrastructure Engineer, M...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57476283",
    "title": "Senior Backend Engineer",
    "company": "Sphere Digital Recruitment",
@@ -3073,6 +3059,20 @@
    "published": "20/10/2026",
    "url": "https://www.reed.co.uk/jobs/senior-backend-engineer/57476283",
    "description": "An exciting high-growth technology business is looking for a Senior Backend / Platform Engineer Contractor to support the development and scaling of a critical internal platform. This is a hands-on role focused on backend engineering, cloud infrastructure and platform scalability within a fast-paced product environment. Based in: London (primarily remote) Occasional office travel required 6 months initially Start date: ASAP 500- 600 per day - Ou...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57478042",
+   "title": "Infrastructure Engineer / Cloud Engineer",
+   "company": "AWD online",
+   "location": "BS348XX",
+   "contract": "Contract",
+   "salary": "50000.0–60000.0 GBP",
+   "remoteHint": false,
+   "published": "20/10/2026",
+   "url": "https://www.reed.co.uk/jobs/infrastructure-engineer-cloud-engineer/57478042",
+   "description": "Senior Cloud Infrastructure Engineer Take on a senior technical role spanning third-line support, complex Microsoft cloud environments and enterprise projects, with ownership of challenging issues and the opportunity to develop SME-level expertise. If you’ve also worked in the following roles, we’d also like to hear from you: Senior Cloud Engineer, Senior Infrastructure Engineer, Cloud Infrastructure Engineer, 3rd Line Infrastructure Engineer, M...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {

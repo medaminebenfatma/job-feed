@@ -314,17 +314,11 @@ def fetch_free_feeds(errors):
     return out
 
 
-# --- Public job-board pages (Free-Work, Freelance-Informatique, Collective) -
+# --- Public job-board pages (Freelance-Informatique, Collective) -
+# Free-Work refuses GitHub's runner (HTTP 503), so it stays with the scanner.
 # Read from GitHub's runner so the scanner needs no web access. Only the public listing pages;
 # no login, no forms. Data comes from the structured JSON the pages already embed.
 BOARD_PAGES = [
-    ("Free-Work", "https://www.free-work.com/fr/tech-it/jobs?query=devops&contracts=contractor&remote=full"),
-    ("Free-Work", "https://www.free-work.com/fr/tech-it/jobs?query=sre&contracts=contractor&remote=full"),
-    ("Free-Work", "https://www.free-work.com/fr/tech-it/jobs?query=kubernetes&contracts=contractor&remote=full"),
-    ("Free-Work", "https://www.free-work.com/fr/tech-it/jobs?query=cloud%20devops&contracts=contractor&remote=full"),
-    ("Free-Work", "https://www.free-work.com/fr/tech-it/jobs?query=devops%20sophia%20antipolis&contracts=contractor"),
-    ("Free-Work", "https://www.free-work.com/fr/tech-it/jobs?query=devops%20nice&contracts=contractor"),
-    ("Free-Work", "https://www.free-work.com/fr/tech-it/jobs?query=devops&contracts=permanent&remote=full"),
     ("Collective", "https://www.collective.work/jobs/en"),
     ("Collective", "https://www.collective.work/jobs/en?page=2"),
     ("Collective", "https://www.collective.work/jobs/en?page=3"),
@@ -416,30 +410,37 @@ def _collective_jobs(html_text):
     for q in data["props"]["pageProps"]["dehydratedState"]["queries"]:
         res = ((q.get("state") or {}).get("data") or {}).get("results") or {}
         projects += res.get("projects", [])
-    if projects and not os.environ.get("QUIET_KEYS"):
-        print("Collective project keys:", sorted(projects[0].keys()))
     out = []
     for o in projects:
         slug = o.get("slug") or o.get("id")
-        rate = _first(o, "dailyRate", "tjm", "averageDailyRate", "rate", "budget", "price")
-        if isinstance(rate, dict):
-            rate = " ".join(str(v) for v in rate.values() if v)
-        loc = _first(o, "location", "city", "locations")
+        co = o.get("company")
+        company = (co.get("name") or co.get("title") or "") if isinstance(co, dict) else (co or "")
+        lo, hi = o.get("minSalary"), o.get("maxSalary")
+        sal = ""
+        if lo or hi:
+            sal = f"{lo or ''}–{hi or ''} {o.get('salaryCurrency') or ''} / {o.get('salaryFrequency') or ''}".strip()
+        elif o.get("budgetBrief"):
+            sal = str(o.get("budgetBrief"))
+        loc = o.get("location")
         if isinstance(loc, (list, dict)):
             loc = json.dumps(loc, ensure_ascii=False)[:120]
-        remote = _first(o, "remote", "remotePolicy", "workMode", "teleworking")
+        wp = o.get("workPreferences")
+        wp = json.dumps(wp, ensure_ascii=False) if isinstance(wp, (list, dict)) else (wp or "")
+        ct = o.get("contractTypes")
+        ct = ", ".join(str(x) for x in ct) if isinstance(ct, list) else (ct or "")
         desc = o.get("description") or o.get("sumUp") or ""
         out.append(
             {
                 "source": "Collective",
                 "id": f"collective-{o.get('id') or slug}",
                 "title": o.get("name") or o.get("sumUp") or "",
-                "company": "",
-                "location": str(loc),
-                "contract": "Freelance",
-                "salary": str(rate) if rate else "",
-                "remoteHint": bool(remote) or bool(REMOTE_RE.search(desc)),
-                "published": _first(o, "publishedAt", "createdAt", "startDate"),
+                "company": company,
+                "location": str(loc or ""),
+                "contract": ct or ("Permanent" if o.get("isPermanentContract") else "Freelance"),
+                "salary": sal,
+                "remoteHint": bool(re.search(r"remote|full", wp, re.I)) or bool(REMOTE_RE.search(desc)),
+                "workPreferences": wp,
+                "published": o.get("publishedAt") or "",
                 "url": f"https://www.collective.work/job/{slug}",
                 "description": clean(desc),
                 "country": "",

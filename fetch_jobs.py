@@ -669,7 +669,13 @@ def main():
     }
     with open(OUT, "w", encoding="utf-8") as f:
         json.dump(doc, f, ensure_ascii=False, indent=1)
-    print(f"{len(ordered)} jobs {counts}; errors: {errors or 'none'}")
+    # Compact copy for the scanner: only jobs first seen in the last 3 days, shorter descriptions.
+    recent_cut = (now - timedelta(days=3)).isoformat(timespec="seconds")
+    recent = [dict(j, description=(j.get("description") or "")[:400]) for j in ordered if j.get("firstSeen", "") >= recent_cut]
+    rdoc = {"generatedAt": doc["generatedAt"], "windowDays": 3, "counts": counts, "errors": errors, "jobs": recent}
+    with open(os.path.join(os.path.dirname(OUT), "recent.json"), "w", encoding="utf-8") as f:
+        json.dump(rdoc, f, ensure_ascii=False, indent=1)
+    print(f"{len(ordered)} jobs {counts}; recent {len(recent)}; errors: {errors or 'none'}")
     # Fail the run only if every source failed, so problems are visible in Actions.
     if errors and not fresh and not os.environ.get("ALLOW_EMPTY"):
         sys.exit(1)

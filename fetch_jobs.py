@@ -314,6 +314,163 @@ def fetch_free_feeds(errors):
     return out
 
 
+# --- Public job-board pages (Free-Work, Freelance-Informatique, Collective) -
+# Read from GitHub's runner so the scanner needs no web access. Only the public listing pages;
+# no login, no forms. Data comes from the structured JSON the pages already embed.
+BOARD_PAGES = [
+    ("Free-Work", "https://www.free-work.com/fr/tech-it/jobs?query=devops&contracts=contractor&remote=full"),
+    ("Free-Work", "https://www.free-work.com/fr/tech-it/jobs?query=sre&contracts=contractor&remote=full"),
+    ("Free-Work", "https://www.free-work.com/fr/tech-it/jobs?query=kubernetes&contracts=contractor&remote=full"),
+    ("Free-Work", "https://www.free-work.com/fr/tech-it/jobs?query=cloud%20devops&contracts=contractor&remote=full"),
+    ("Free-Work", "https://www.free-work.com/fr/tech-it/jobs?query=devops%20sophia%20antipolis&contracts=contractor"),
+    ("Free-Work", "https://www.free-work.com/fr/tech-it/jobs?query=devops%20nice&contracts=contractor"),
+    ("Free-Work", "https://www.free-work.com/fr/tech-it/jobs?query=devops&contracts=permanent&remote=full"),
+    ("Collective", "https://www.collective.work/jobs/en"),
+    ("Collective", "https://www.collective.work/jobs/en?page=2"),
+    ("Collective", "https://www.collective.work/jobs/en?page=3"),
+    ("Freelance-Informatique", "https://www.freelance-informatique.fr/offres-freelance"),
+    ("Freelance-Informatique", "https://www.freelance-informatique.fr/offres-freelance?page=2"),
+    ("Freelance-Informatique", "https://www.freelance-informatique.fr/offres-freelance?page=3"),
+]
+BROWSER_UA = "Mozilla/5.0 (compatible; job-feed personal tracker)"
+
+
+def _walk(x, found, kind):
+    if isinstance(x, dict):
+        t = x.get("@type")
+        if t == kind or (isinstance(t, list) and kind in t):
+            found.append(x)
+        for v in x.values():
+            _walk(v, found, kind)
+    elif isinstance(x, list):
+        for v in x:
+            _walk(v, found, kind)
+
+
+def _first(d, *keys):
+    for k in keys:
+        v = d.get(k)
+        if v not in (None, "", [], {}):
+            return v
+    return ""
+
+
+def _jsonld_jobs(source, html_text):
+    posts = []
+    for m in re.finditer(r'<script[^>]*type="application/ld\+json"[^>]*>(.*?)</script>', html_text, re.S):
+        try:
+            _walk(json.loads(m.group(1)), posts, "JobPosting")
+        except ValueError:
+            continue
+    out = []
+    for o in posts:
+        org = o.get("hiringOrganization")
+        company = org.get("name", "") if isinstance(org, dict) else (org or "")
+        loc = o.get("jobLocation")
+        if isinstance(loc, list) and loc:
+            loc = loc[0]
+        addr = loc.get("address", {}) if isinstance(loc, dict) else {}
+        place = ", ".join(x for x in (addr.get("addressLocality"), addr.get("addressRegion")) if x) if isinstance(addr, dict) else ""
+        remote_type = str(o.get("jobLocationType", ""))
+        sal = ""
+        bs = o.get("baseSalary")
+        if isinstance(bs, dict):
+            v = bs.get("value")
+            if isinstance(v, dict):
+                lo, hi, unit = v.get("minValue"), v.get("maxValue"), v.get("unitText", "")
+                if lo or hi:
+                    sal = f"{lo or ''}–{hi or ''} {bs.get('currency', '')} / {unit}".strip()
+                elif v.get("value"):
+                    sal = f"{v.get('value')} {bs.get('currency', '')} / {unit}".strip()
+            elif v:
+                sal = f"{v} {bs.get('currency', '')}".strip()
+        url = o.get("url") or o.get("@id") or ""
+        et = o.get("employmentType")
+        et = ", ".join(et) if isinstance(et, list) else (et or "")
+        text = f"{o.get('title', '')} {o.get('description', '')} {place}"
+        out.append(
+            {
+                "source": source,
+                "id": f"{source.lower()}-{url.rstrip('/').split('/')[-1] or o.get('identifier', '')}",
+                "title": o.get("title", ""),
+                "company": company,
+                "location": place or ("Remote" if "TELECOMMUTE" in remote_type else ""),
+                "contract": et,
+                "salary": sal,
+                "remoteHint": "TELECOMMUTE" in remote_type or bool(REMOTE_RE.search(text)),
+                "published": o.get("datePosted", ""),
+                "url": url,
+                "description": clean(o.get("description", "")),
+                "country": "FR",
+            }
+        )
+    return out
+
+
+def _collective_jobs(html_text):
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', html_text, re.S)
+    if not m:
+        return []
+    data = json.loads(m.group(1))
+    projects = []
+    for q in data["props"]["pageProps"]["dehydratedState"]["queries"]:
+        res = ((q.get("state") or {}).get("data") or {}).get("results") or {}
+        projects += res.get("projects", [])
+    if projects and not os.environ.get("QUIET_KEYS"):
+        print("Collective project keys:", sorted(projects[0].keys()))
+    out = []
+    for o in projects:
+        slug = o.get("slug") or o.get("id")
+        rate = _first(o, "dailyRate", "tjm", "averageDailyRate", "rate", "budget", "price")
+        if isinstance(rate, dict):
+            rate = " ".join(str(v) for v in rate.values() if v)
+        loc = _first(o, "location", "city", "locations")
+        if isinstance(loc, (list, dict)):
+            loc = json.dumps(loc, ensure_ascii=False)[:120]
+        remote = _first(o, "remote", "remotePolicy", "workMode", "teleworking")
+        desc = o.get("description") or o.get("sumUp") or ""
+        out.append(
+            {
+                "source": "Collective",
+                "id": f"collective-{o.get('id') or slug}",
+                "title": o.get("name") or o.get("sumUp") or "",
+                "company": "",
+                "location": str(loc),
+                "contract": "Freelance",
+                "salary": str(rate) if rate else "",
+                "remoteHint": bool(remote) or bool(REMOTE_RE.search(desc)),
+                "published": _first(o, "publishedAt", "createdAt", "startDate"),
+                "url": f"https://www.collective.work/job/{slug}",
+                "description": clean(desc),
+                "country": "",
+            }
+        )
+    return out
+
+
+def fetch_pages(errors):
+    out = []
+    for source, url in BOARD_PAGES:
+        try:
+            page = _get_text_ua(url)
+            jobs = _collective_jobs(page) if source == "Collective" else _jsonld_jobs(source, page)
+        except urllib.error.HTTPError as e:
+            errors.append(f"{source} page: HTTP {e.code}")
+            continue
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"{source} page: {type(e).__name__}")
+            continue
+        out += [j for j in jobs if DEVOPS_RE.search(f"{j['title']} {j['description']}")]
+        time.sleep(1)
+    return out
+
+
+def _get_text_ua(url, timeout=30):
+    req = urllib.request.Request(url, headers={"User-Agent": BROWSER_UA, "Accept": "text/html,*/*"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read().decode("utf-8", "replace")
+
+
 # --- JobServe / CareerBoard via Apify (paid per result, optional) ----------
 # Actor: https://apify.com/fetchclub/jobserve-jobs-scraper (~$3 per 1,000 jobs).
 # Runs once a day with small caps so it stays inside Apify's free monthly credit.
@@ -466,7 +623,7 @@ def main():
             old_doc = {}
     old = {j["id"]: j for j in old_doc.get("jobs", [])}
 
-    fresh = fetch_ft(errors) + fetch_reed(errors) + fetch_free_feeds(errors)
+    fresh = fetch_ft(errors) + fetch_reed(errors) + fetch_free_feeds(errors) + fetch_pages(errors)
 
     # Apify (paid per result): run at most once every APIFY_EVERY_HOURS.
     apify_at = old_doc.get("apifyAt", "")

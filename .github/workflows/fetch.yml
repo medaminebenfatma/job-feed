@@ -36,6 +36,9 @@ jobs:
           OMKAR_INDEED_URL: ${{ secrets.OMKAR_INDEED_URL }}
           FORCE_APIFY: ${{ inputs.force_apify }}
         run: python fetch_jobs.py
+      - name: Probe job-board pages (diagnostic)
+        continue-on-error: true
+        run: python probe_pages.py
       - name: Commit jobs.json if changed
         run: |
           git config user.name "job-feed-bot"

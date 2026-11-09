@@ -210,6 +210,110 @@ def fetch_reed(errors):
     return out
 
 
+# --- Free remote-job feeds (no key) ----------------------------------------
+# Moved here from the scanner so it needs no web access for them.
+FREE_FEEDS = [
+    ("Jobicy", "https://jobicy.com/api/v2/remote-jobs?count=50&tag=devops&geo=europe"),
+    ("Jobicy", "https://jobicy.com/api/v2/remote-jobs?count=50&tag=sre"),
+    ("RemoteOK", "https://remoteok.com/api?tag=devops"),
+    ("Working Nomads", "https://www.workingnomads.com/api/exposed_jobs/"),
+    ("We Work Remotely", "https://weworkremotely.com/categories/remote-devops-sysadmin-jobs.rss"),
+]
+
+
+def _get_text(url, timeout=30):
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json, application/rss+xml, */*"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return r.read().decode("utf-8", "replace")
+
+
+def _free_job(source, jid, title, company, location, contract, salary, published, url, desc, tags=""):
+    return {
+        "source": source,
+        "id": f"{source.lower().replace(' ', '')}-{jid}",
+        "title": title or "",
+        "company": company or "",
+        "location": location or "Remote",
+        "contract": contract or "",
+        "salary": salary or "",
+        "remoteHint": True,
+        "published": published or "",
+        "url": url or "",
+        "description": clean(desc),
+        "country": "",
+        "_tags": tags,
+    }
+
+
+def fetch_free_feeds(errors):
+    out = []
+    for source, url in FREE_FEEDS:
+        try:
+            raw = _get_text(url)
+        except urllib.error.HTTPError as e:
+            errors.append(f"{source}: HTTP {e.code}")
+            continue
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"{source}: {type(e).__name__}")
+            continue
+        jobs = []
+        try:
+            if url.endswith(".rss"):
+                import xml.etree.ElementTree as ET
+
+                for it in ET.fromstring(raw).iter("item"):
+                    t = (it.findtext("title") or "").strip()
+                    company, _, title = t.partition(": ")
+                    if not title:
+                        company, title = "", t
+                    link = (it.findtext("link") or "").strip()
+                    jobs.append(_free_job(source, link.rstrip("/").split("/")[-1], title, company,
+                                          it.findtext("region") or "Remote", "", "",
+                                          it.findtext("pubDate") or "", link, it.findtext("description") or "",
+                                          it.findtext("category") or ""))
+            else:
+                js = json.loads(raw)
+                if source == "Jobicy":
+                    for o in (js or {}).get("jobs", []):
+                        sal = ""
+                        if o.get("annualSalaryMin") or o.get("annualSalaryMax"):
+                            sal = f"{o.get('annualSalaryMin', '')}–{o.get('annualSalaryMax', '')} {o.get('salaryCurrency', '')}"
+                        jt = o.get("jobType")
+                        jobs.append(_free_job(source, o.get("id"), o.get("jobTitle"), o.get("companyName"),
+                                              o.get("jobGeo"), ", ".join(jt) if isinstance(jt, list) else jt, sal,
+                                              o.get("pubDate"), o.get("url"),
+                                              o.get("jobExcerpt") or o.get("jobDescription"),
+                                              " ".join(o.get("jobIndustry") or []) if isinstance(o.get("jobIndustry"), list) else ""))
+                elif source == "RemoteOK":
+                    for o in js if isinstance(js, list) else []:
+                        if not isinstance(o, dict) or not o.get("position"):
+                            continue
+                        sal = f"{o.get('salary_min')}–{o.get('salary_max')} USD" if o.get("salary_min") else ""
+                        jobs.append(_free_job(source, o.get("id"), o.get("position"), o.get("company"),
+                                              o.get("location"), "", sal, o.get("date"), o.get("url"),
+                                              o.get("description"), " ".join(o.get("tags") or [])))
+                else:  # Working Nomads
+                    for o in js if isinstance(js, list) else []:
+                        tags = o.get("tags") or ""
+                        jobs.append(_free_job(source, (o.get("url") or "").rstrip("/").split("/")[-1], o.get("title"),
+                                              o.get("company_name"), o.get("location"), "", "",
+                                              o.get("pub_date"), o.get("url"), o.get("description"),
+                                              (tags if isinstance(tags, str) else " ".join(tags)) + " " + str(o.get("category_name") or "")))
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"{source}: parse {type(e).__name__}")
+            continue
+        n = 0
+        for j in jobs:
+            if not DEVOPS_RE.search(f"{j['title']} {j['_tags']}"):
+                j.pop("_tags", None)
+                continue
+            j.pop("_tags", None)
+            out.append(j)
+            n += 1
+        time.sleep(0.5)
+    return out
+
+
 # --- JobServe / CareerBoard via Apify (paid per result, optional) ----------
 # Actor: https://apify.com/fetchclub/jobserve-jobs-scraper (~$3 per 1,000 jobs).
 # Runs once a day with small caps so it stays inside Apify's free monthly credit.
@@ -362,7 +466,7 @@ def main():
             old_doc = {}
     old = {j["id"]: j for j in old_doc.get("jobs", [])}
 
-    fresh = fetch_ft(errors) + fetch_reed(errors)
+    fresh = fetch_ft(errors) + fetch_reed(errors) + fetch_free_feeds(errors)
 
     # Apify (paid per result): run at most once every APIFY_EVERY_HOURS.
     apify_at = old_doc.get("apifyAt", "")

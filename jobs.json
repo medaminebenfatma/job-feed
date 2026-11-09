@@ -1,11 +1,11 @@
 {
- "generatedAt": "2026-11-09T13:42:23+00:00",
+ "generatedAt": "2026-11-09T13:43:32+00:00",
  "apifyAt": "2026-11-08T20:28:14+00:00",
  "counts": {
+  "Working Nomads": 3,
   "Reed": 155,
   "Jobicy": 22,
   "RemoteOK": 32,
-  "Working Nomads": 2,
   "We Work Remotely": 32,
   "JobServe": 37,
   "CareerBoard": 18,
@@ -15,6 +15,21 @@
   "France Travail token: HTTP 400 invalid_client: Client authentication failed"
  ],
  "jobs": [
+  {
+   "source": "Working Nomads",
+   "id": "workingnomads-2007922",
+   "title": "Senior Business Central Developer",
+   "company": "Proxify",
+   "location": "CET (+/- 3 hours)",
+   "contract": "",
+   "salary": "",
+   "remoteHint": true,
+   "published": "2026-11-09T08:42:43-05:00",
+   "url": "https://www.workingnomads.com/job/go/2007922/",
+   "description": "About us: Talent has no borders. Proxify's mission is to connect top developers around the world with the opportunities they deserve. So, it doesn't matter where you are; we are here to help you fast-track your independent career in the right direction. 🙂 Since our launch, Proxify's developers have successfully worked with 1200+ happy clients to build their products and growth features. 5000+ talented developers trust Proxify and its network to fulfill their dreams and objectives. Proxify is shaped by a global network of supportive, talented developers interested in remote full-time jobs. Our Glassdoor (4.5/5) and Trustpilot (4.8/5) ratings reflect the trust developers place in us and our co",
+   "country": "",
+   "firstSeen": "2026-11-09T13:43:32+00:00"
+  },
   {
    "source": "Reed",
    "id": "reed-57543509",
@@ -474,7 +489,7 @@
    "remoteHint": true,
    "published": "2026-07-24T00:09:16+00:00",
    "url": "https://remoteOK.com/remote-jobs/remote-analista-de-infraestrutura-pleno-devops-melhor-envio-1135334",
-   "description": "Anunciada 00:00:00. Com senso de dono e colaboraÃ§Ã£o, unimos forÃ§as para remover barreiras e impulsionarnegÃ³cios. NÃ£oâ¦ - veja esta vaga e outras semelhantes no LinkedIn. Please mention the word **REFORMING** and tag RMjAuNjQuNjcuOA== when applying to show you read the job post completely (#RMjAuNjQuNjcuOA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+   "description": "Anunciada 00:00:00. Com senso de dono e colaboraÃ§Ã£o, unimos forÃ§as para remover barreiras e impulsionarnegÃ³cios. NÃ£oâ¦ - veja esta vaga e outras semelhantes no LinkedIn. Please mention the word **REFORMING** and tag RNC4yNDIuNTIuMTgw when applying to show you read the job post completely (#RNC4yNDIuNTIuMTgw). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
    "country": "",
    "firstSeen": "2026-11-09T13:41:20+00:00"
   },
@@ -639,7 +654,7 @@
    "remoteHint": true,
    "published": "2026-07-04T00:00:00+00:00",
    "url": "https://remoteOK.com/remote-jobs/remote-pesquisador-zukkin-inteligencia-de-precos-1135823",
-   "description": "Quer fazer parte de um time ? Estamos contratando pesquisador de campo! Local: itajaÃ­/sc Buscamos Profissionais Com boa comunicaÃ§Ã£o organizaÃ§Ã£o proatividade Atividades: coleta de dados e inserÃ§Ã£o em aplicativo da empresa. Interessados entrar em contato via whatsapp: (InformaÃ§Ã£o Confidencial) Ou seu currÃ­culo no email: (Email Confidencial). Please mention the word **SALUTARY** and tag RMjAuNjQuNjcuOA== when applying to show you read the job post completely (#RMjAuNjQuNjcuOA==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+   "description": "Quer fazer parte de um time ? Estamos contratando pesquisador de campo! Local: itajaÃ­/sc Buscamos Profissionais Com boa comunicaÃ§Ã£o organizaÃ§Ã£o proatividade Atividades: coleta de dados e inserÃ§Ã£o em aplicativo da empresa. Interessados entrar em contato via whatsapp: (InformaÃ§Ã£o Confidencial) Ou seu currÃ­culo no email: (Email Confidencial). Please mention the word **SALUTARY** and tag RNC4yNDIuNTIuMTgw when applying to show you read the job post completely (#RNC4yNDIuNTIuMTgw). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
    "country": "",
    "firstSeen": "2026-11-09T13:41:20+00:00"
   },
@@ -819,7 +834,7 @@
    "remoteHint": true,
    "published": "2026-05-28T13:45:32+00:00",
    "url": "https://remoteOK.com/remote-jobs/remote-lead-generator-breevy-1132473",
-   "description": "Iâm looking to connect with an experienced Lead Generator / Appointment Setter who can help identify and reach out to quality B2B prospects in the Cloud, DevOps, AWS, and AI in Cloud space. Iâm especially interested in someone who can target companies that may need help with: AWS cloud infrastructure DevOps and CI/CD Cloud migration AI/ML pipelines and models on AWS Monitoring and infrastructure optimization The ideal person should have experience with LinkedIn outreach, email outreach, prospect research, and booking qualified calls with decision-makers. DM me if you are interested Please mention the word **SNAZZY** and tag RMjAuNjQuNjcuOA== when applying to show you read the job post co",
+   "description": "Iâm looking to connect with an experienced Lead Generator / Appointment Setter who can help identify and reach out to quality B2B prospects in the Cloud, DevOps, AWS, and AI in Cloud space. Iâm especially interested in someone who can target companies that may need help with: AWS cloud infrastructure DevOps and CI/CD Cloud migration AI/ML pipelines and models on AWS Monitoring and infrastructure optimization The ideal person should have experience with LinkedIn outreach, email outreach, prospect research, and booking qualified calls with decision-makers. DM me if you are interested Please mention the word **SNAZZY** and tag RNC4yNDIuNTIuMTgw when applying to show you read the job post co",
    "country": "",
    "firstSeen": "2026-11-09T13:41:20+00:00"
   },
@@ -849,7 +864,7 @@
    "remoteHint": true,
    "published": "2026-05-21T15:42:29+00:00",
    "url": "https://remoteOK.com/remote-jobs/remote-operations-coordinator-gac-group-1133778",
-   "description": "Job Description Vessel coordinator work for arrival &amp; departure formalities Immigration &amp; customs coordination formalities. Attend various ports, meet officials Ship spares coordination between stakeholders. Job Requirements Must be currently based in Suriname. Honest &amp; ethical work track record. Vessel handling as agents / work experience minimum 2-3 years. Solid local know how in operational procedures, relationship with stakeholders such as Immigration, Customs, Maritime. Must have excellent computer / Microsoft skills for day to day work. Please mention the word **BULLISH** and tag RMjAuNjQuNjcuOA== when applying to show you read the job post completely (#RMjAuNjQuNjcuOA==). ",
+   "description": "Job Description Vessel coordinator work for arrival &amp; departure formalities Immigration &amp; customs coordination formalities. Attend various ports, meet officials Ship spares coordination between stakeholders. Job Requirements Must be currently based in Suriname. Honest &amp; ethical work track record. Vessel handling as agents / work experience minimum 2-3 years. Solid local know how in operational procedures, relationship with stakeholders such as Immigration, Customs, Maritime. Must have excellent computer / Microsoft skills for day to day work. Please mention the word **BULLISH** and tag RNC4yNDIuNTIuMTgw when applying to show you read the job post completely (#RNC4yNDIuNTIuMTgw). ",
    "country": "",
    "firstSeen": "2026-11-09T13:41:20+00:00"
   },
@@ -1777,20 +1792,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57433108",
-   "title": "ICT Engineer - SW Factory (Active SC Applicants only)",
-   "company": "Advanced Resource Managers Limited",
-   "location": "Reading",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": false,
-   "published": "07/10/2026",
-   "url": "https://www.reed.co.uk/jobs/ict-engineer-sw-factory-active-sc-applicants-only/57433108",
-   "description": "Applicants must be SOLE UK NATIONAL and hold an ACTIVE SC CLEARANCE Rate - TBC Start - ASAP Duration - 6 months to start, project likely 3-4 years Location - Reading Hybrid (2 days per week in Reading once office up and running) Job purpose The ICT Engineer supports the implementation, operation, maintenance, and evolution of Software Factory platforms, development toolchains, and automation capabilities. Key Accountabilities and Objectives ? Ac...",
-   "firstSeen": "2026-11-06T18:59:16+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57403411",
    "title": "Software Engineer - Software Factory",
    "company": "Advanced Resource Managers Limited",
@@ -1801,6 +1802,20 @@
    "published": "29/09/2026",
    "url": "https://www.reed.co.uk/jobs/software-engineer-software-factory/57403411",
    "description": "Software Engineer - Software Factory Initial 6 Month contract - Inside IR35 - market rate Reading based - hybrid working -2 days a week onsite Defence sector - must have current and active SC Clearance Job purpose The ICT Engineer supports the implementation, operation, maintenance, and evolution of Software Factory platforms, development toolchains, and automation capabilities. Key Accountabilities and Objectives ? Accountabilities include (but...",
+   "firstSeen": "2026-11-06T18:59:16+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57433108",
+   "title": "ICT Engineer - SW Factory (Active SC Applicants only)",
+   "company": "Advanced Resource Managers Limited",
+   "location": "Reading",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": false,
+   "published": "07/10/2026",
+   "url": "https://www.reed.co.uk/jobs/ict-engineer-sw-factory-active-sc-applicants-only/57433108",
+   "description": "Applicants must be SOLE UK NATIONAL and hold an ACTIVE SC CLEARANCE Rate - TBC Start - ASAP Duration - 6 months to start, project likely 3-4 years Location - Reading Hybrid (2 days per week in Reading once office up and running) Job purpose The ICT Engineer supports the implementation, operation, maintenance, and evolution of Software Factory platforms, development toolchains, and automation capabilities. Key Accountabilities and Objectives ? Ac...",
    "firstSeen": "2026-11-06T18:59:16+00:00"
   },
   {
@@ -2057,20 +2072,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57488631",
-   "title": "Senior Java Engineer",
-   "company": "Forward Role",
-   "location": "Greater Manchester",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": false,
-   "published": "23/10/2026",
-   "url": "https://www.reed.co.uk/jobs/senior-java-engineer/57488631",
-   "description": "Senior Java Engineer: 6 month contract. Outside IR35, 2 days a week in Manchester. I'm looking for a senior Java Engineer to join a small team working on building a load of new backend services for an existing platform. The role requires someone who can be in office a couple of days a week to collaborate with the small engineering and product team. What you’ll be doing Building event-driven services and integrations on Kafka Deploying and runnin...",
-   "firstSeen": "2026-11-06T18:59:16+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57412261",
    "title": "Senior Java Developer (AWS, Microservices) - Sussex",
    "company": "Salt Search",
@@ -2081,6 +2082,20 @@
    "published": "01/10/2026",
    "url": "https://www.reed.co.uk/jobs/senior-java-developer-aws-microservices-sussex/57412261",
    "description": "Senior Java Developer (AWS, Microservices) - Travel - Sussex Daily rate: 550 - 700 (inside IR35) Duration: 3 - 6 months Hybrid: 1 - 2 days Start: ASAP My new client is looking for a Senior Java Developer (AWS, Microservices) to join the team on a contract basis. You will play a key role in designing, developing, and maintaining secure, scalable, and cloud-native Java microservices, primarily hosted on AWS, integrating with both internal and thir...",
+   "firstSeen": "2026-11-06T18:59:16+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57488631",
+   "title": "Senior Java Engineer",
+   "company": "Forward Role",
+   "location": "Greater Manchester",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": false,
+   "published": "23/10/2026",
+   "url": "https://www.reed.co.uk/jobs/senior-java-engineer/57488631",
+   "description": "Senior Java Engineer: 6 month contract. Outside IR35, 2 days a week in Manchester. I'm looking for a senior Java Engineer to join a small team working on building a load of new backend services for an existing platform. The role requires someone who can be in office a couple of days a week to collaborate with the small engineering and product team. What you’ll be doing Building event-driven services and integrations on Kafka Deploying and runnin...",
    "firstSeen": "2026-11-06T18:59:16+00:00"
   },
   {
@@ -2379,20 +2394,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57501742",
-   "title": "Application & Platform Upgrade Engineer - SC Cleared",
-   "company": "Lorien",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": false,
-   "published": "28/10/2026",
-   "url": "https://www.reed.co.uk/jobs/application-platform-upgrade-engineer-sc-cleared/57501742",
-   "description": "Application &amp; Platform Upgrade Engineer SC Cleared - 6 month contract - Hybrid - London 50% Our Financial Services client is seeking three Application &amp; Platform Upgrade Engineers to join their Financial Systems and Solutions division. These roles will focus on upgrading enterprise applications across the estate and helping design future upgrade paths and strategies. The successful candidates will bring hands-on experience upgrading appl...",
-   "firstSeen": "2026-11-06T18:59:16+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57402899",
    "title": "Autonomy Solution Architect - Outside IR35",
    "company": "Matchtech ",
@@ -2403,6 +2404,20 @@
    "published": "29/09/2026",
    "url": "https://www.reed.co.uk/jobs/autonomy-solution-architect-outside-ir35/57402899",
    "description": "Our client is seeking an experienced Autonomy Solution Architect for a senior contract role within the defence and security sector. Based in the UK with hybrid working, this opportunity involves taking ownership of the end-to-end technical solution for an advanced autonomy platform, supporting the development and deployment of autonomous and uncrewed systems from concept through to operational service. Key Responsibilities: Own and develop the a...",
+   "firstSeen": "2026-11-06T18:59:16+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57501742",
+   "title": "Application & Platform Upgrade Engineer - SC Cleared",
+   "company": "Lorien",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": false,
+   "published": "28/10/2026",
+   "url": "https://www.reed.co.uk/jobs/application-platform-upgrade-engineer-sc-cleared/57501742",
+   "description": "Application &amp; Platform Upgrade Engineer SC Cleared - 6 month contract - Hybrid - London 50% Our Financial Services client is seeking three Application &amp; Platform Upgrade Engineers to join their Financial Systems and Solutions division. These roles will focus on upgrading enterprise applications across the estate and helping design future upgrade paths and strategies. The successful candidates will bring hands-on experience upgrading appl...",
    "firstSeen": "2026-11-06T18:59:16+00:00"
   },
   {
@@ -2505,20 +2520,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57522452",
-   "title": "Data Platform Project Manager (Active SC Clearance required)",
-   "company": "Hays Specialist Recruitment Limited",
-   "location": "TA11AA",
-   "contract": "Contract",
-   "salary": "630.0–630.0 GBP",
-   "remoteHint": false,
-   "published": "03/11/2026",
-   "url": "https://www.reed.co.uk/jobs/data-platform-project-manager-active-sc-clearance-required/57522452",
-   "description": "630 per day 12 months! Taunton, Somerset UK Active SC clearance is essential. Candidates must already hold active SC clearance, and applications without it cannot be considered. Please include the name of your sponsor and your clearance reference ID in your CV. Your new organisation Some organisations write strategy. This one builds it. A UK public-sector body with a sharp corporate plan has set up a dedicated portfolio office to turn ambition i...",
-   "firstSeen": "2026-11-06T18:59:16+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57405525",
    "title": "Data Engineer",
    "company": "Oscar Technology",
@@ -2529,6 +2530,20 @@
    "published": "30/09/2026",
    "url": "https://www.reed.co.uk/jobs/data-engineer/57405525",
    "description": "Data Engineer | 450- 500p/day (Inside IR35) | London (Hybrid, 1-2 days per week on site) | Energy/highly regulated environments | Azure/Microsoft Fabric Our client is looking for an experienced Data Engineer to support the ongoing maintenance, enhancement and development of their operational data platform within a highly regulated Energy from Waste (EfW) environment. We're looking for someone who will manage and improve the flow of operational, ...",
+   "firstSeen": "2026-11-06T18:59:16+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57522452",
+   "title": "Data Platform Project Manager (Active SC Clearance required)",
+   "company": "Hays Specialist Recruitment Limited",
+   "location": "TA11AA",
+   "contract": "Contract",
+   "salary": "630.0–630.0 GBP",
+   "remoteHint": false,
+   "published": "03/11/2026",
+   "url": "https://www.reed.co.uk/jobs/data-platform-project-manager-active-sc-clearance-required/57522452",
+   "description": "630 per day 12 months! Taunton, Somerset UK Active SC clearance is essential. Candidates must already hold active SC clearance, and applications without it cannot be considered. Please include the name of your sponsor and your clearance reference ID in your CV. Your new organisation Some organisations write strategy. This one builds it. A UK public-sector body with a sharp corporate plan has set up a dedicated portfolio office to turn ambition i...",
    "firstSeen": "2026-11-06T18:59:16+00:00"
   },
   {
@@ -3970,20 +3985,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57399313",
-   "title": "Build & Deployment Engineer",
-   "company": " Deerfoot Recruitment Solutions Ltd",
-   "location": "EC2Y9AG",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": true,
-   "published": "28/09/2026",
-   "url": "https://www.reed.co.uk/jobs/build-deployment-engineer/57399313",
-   "description": "Build &amp; Deployment Engineer - C#/.NET, Octopus Deploy &amp; Secure Coding City of London - Hybrid (4 Days on-site, 1 day WFH each week) Inside IR35 Contract Are you a build and deployment engineer who can open up the C# code behind a pipeline and fix it yourself? That combination is exactly what's needed here. You'll join the Platform Engineering function of one of the world's largest financial groups, owning the on-premises toolchain that t...",
-   "firstSeen": "2026-11-06T16:21:56+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57498601",
    "title": "Lead Platform Engineer",
    "company": "Lorien",
@@ -3994,6 +3995,20 @@
    "published": "27/10/2026",
    "url": "https://www.reed.co.uk/jobs/lead-platform-engineer/57498601",
    "description": "Lead Platform Engineer - Must be DV Clearable - 5 days a week on-site Building the platforms that make AI and machine learning work in production We're looking for a Lead Platform Engineer to join a growing engineering organisation and play a pivotal role in designing, building, and operating an MLOps platform that enables AI and data science teams to deliver reliably in production. This is a senior, hands-on technical leadership role , not a pe...",
+   "firstSeen": "2026-11-06T16:21:56+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57399313",
+   "title": "Build & Deployment Engineer",
+   "company": " Deerfoot Recruitment Solutions Ltd",
+   "location": "EC2Y9AG",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": true,
+   "published": "28/09/2026",
+   "url": "https://www.reed.co.uk/jobs/build-deployment-engineer/57399313",
+   "description": "Build &amp; Deployment Engineer - C#/.NET, Octopus Deploy &amp; Secure Coding City of London - Hybrid (4 Days on-site, 1 day WFH each week) Inside IR35 Contract Are you a build and deployment engineer who can open up the C# code behind a pipeline and fix it yourself? That combination is exactly what's needed here. You'll join the Platform Engineering function of one of the world's largest financial groups, owning the on-premises toolchain that t...",
    "firstSeen": "2026-11-06T16:21:56+00:00"
   },
   {

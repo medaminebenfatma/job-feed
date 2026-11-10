@@ -215,6 +215,10 @@ def fetch_reed(errors):
 FREE_FEEDS = [
     ("Jobicy", "https://jobicy.com/api/v2/remote-jobs?count=50&tag=devops&geo=europe"),
     ("Jobicy", "https://jobicy.com/api/v2/remote-jobs?count=50&tag=sre"),
+    ("Jobicy", "https://jobicy.com/api/v2/remote-jobs?count=50&tag=devops&geo=usa"),
+    ("Jobicy", "https://jobicy.com/api/v2/remote-jobs?count=50&tag=devops&geo=canada"),
+    ("Jobicy", "https://jobicy.com/api/v2/remote-jobs?count=50&tag=devops&geo=anywhere"),
+    ("Jobicy", "https://jobicy.com/api/v2/remote-jobs?count=50&tag=sre&geo=anywhere"),
     ("RemoteOK", "https://remoteok.com/api?tag=devops"),
     ("Working Nomads", "https://www.workingnomads.com/api/exposed_jobs/"),
     ("We Work Remotely", "https://weworkremotely.com/categories/remote-devops-sysadmin-jobs.rss"),
@@ -304,7 +308,8 @@ def fetch_free_feeds(errors):
             continue
         n = 0
         for j in jobs:
-            if not DEVOPS_RE.search(f"{j['title']} {j['_tags']}"):
+            hay = j["title"] if source == "RemoteOK" else f"{j['title']} {j['_tags']}"
+            if not DEVOPS_RE.search(hay):
                 j.pop("_tags", None)
                 continue
             j.pop("_tags", None)
@@ -472,6 +477,164 @@ def _get_text_ua(url, timeout=30):
         return r.read().decode("utf-8", "replace")
 
 
+# --- Himalayas (free JSON API) ------------------------------------------------
+# Docs: https://himalayas.app/api . Rules: keep the applicationLink unchanged, show Himalayas as the
+# source, drop expired jobs, and show jobs only in the owner's own app (this private tracker).
+HIMALAYAS_QUERIES = [
+    {"q": "devops", "employment_type": "Contractor", "country": "FR"},
+    {"q": "sre", "employment_type": "Contractor", "country": "FR"},
+    {"q": "platform engineer", "employment_type": "Contractor", "country": "FR"},
+    {"q": "cloud engineer", "employment_type": "Contractor", "country": "FR"},
+    {"q": "devops", "employment_type": "Contractor", "worldwide": "true"},
+    {"q": "kubernetes", "employment_type": "Contractor", "worldwide": "true"},
+]
+
+
+def _epoch_iso(v):
+    try:
+        v = float(v)
+        if v > 1e12:
+            v /= 1000
+        return datetime.fromtimestamp(v, timezone.utc).isoformat(timespec="seconds")
+    except (TypeError, ValueError):
+        return str(v or "")
+
+
+def fetch_himalayas(errors):
+    out, seen, shown = [], set(), False
+    for q in HIMALAYAS_QUERIES:
+        for page in (1, 2):
+            url = "https://himalayas.app/jobs/api/search?" + urllib.parse.urlencode(dict(q, page=page))
+            try:
+                _, js = http(url)
+            except urllib.error.HTTPError as e:
+                errors.append(f"Himalayas {q['q']}: HTTP {e.code}")
+                break
+            except Exception as e:  # noqa: BLE001
+                errors.append(f"Himalayas {q['q']}: {type(e).__name__}")
+                break
+            rows = (js or {}).get("jobs", []) if isinstance(js, dict) else []
+            if rows and not shown:
+                print("Himalayas job keys:", sorted(rows[0].keys()))
+                shown = True
+            if not rows:
+                break
+            for o in rows:
+                link = o.get("applicationLink") or o.get("url") or ""
+                jid = o.get("guid") or link
+                if not jid or jid in seen:
+                    continue
+                seen.add(jid)
+                lr = o.get("locationRestrictions")
+                loc = ", ".join(str(x) for x in lr) if isinstance(lr, list) and lr else "Worldwide"
+                tz = o.get("timezoneRestrictions")
+                if tz:
+                    loc += " · tz " + (", ".join(str(x) for x in tz) if isinstance(tz, list) else str(tz))
+                lo, hi = o.get("minSalary"), o.get("maxSalary")
+                sal = f"{lo or ''}–{hi or ''} {o.get('currency') or ''}".strip() if (lo or hi) else ""
+                out.append(
+                    {
+                        "source": "Himalayas",
+                        "id": "himalayas-" + re.sub(r"[^a-z0-9]+", "-", str(jid).lower()).strip("-")[-80:],
+                        "title": o.get("title", ""),
+                        "company": o.get("companyName", ""),
+                        "location": loc,
+                        "contract": o.get("employmentType", ""),
+                        "salary": sal,
+                        "remoteHint": True,
+                        "published": _epoch_iso(o.get("pubDate")),
+                        "url": link,
+                        "description": clean(o.get("description") or o.get("excerpt") or ""),
+                        "country": "",
+                        "via": "Himalayas (himalayas.app)",
+                    }
+                )
+            time.sleep(0.6)
+    return [j for j in out if DEVOPS_RE.search(f"{j['title']} {j['description']}")]
+
+
+# --- Company job boards on public ATS APIs (Greenhouse, Lever, Ashby) ----------
+# Edit these lists freely: a wrong or closed board just returns 404 and is reported once.
+ATS_BOARDS = {
+    "greenhouse": ["gitlab", "cloudflare", "datadog", "mongodb", "elastic", "fastly", "pagerduty",
+                   "digitalocean", "circleci", "sentry", "vercel", "grafanalabs", "twilio", "okta",
+                   "dropbox", "stripe", "discord", "coinbase", "reddit", "gusto", "hashicorp"],
+    "lever": ["palantir", "spotify", "kraken", "wealthsimple", "shopify", "plaid", "binance"],
+    "ashby": ["ramp", "notion", "linear", "deel", "supabase", "posthog", "retool", "vanta",
+              "1password", "mercury", "cohere", "temporal", "render", "railway"],
+}
+
+
+def fetch_ats(errors):
+    out, missing = [], []
+    for ats, slugs in ATS_BOARDS.items():
+        for slug in slugs:
+            if ats == "greenhouse":
+                url = f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs"
+            elif ats == "lever":
+                url = f"https://api.lever.co/v0/postings/{slug}?mode=json"
+            else:
+                url = f"https://api.ashbyhq.com/posting-api/job-board/{slug}?includeCompensation=true"
+            try:
+                _, js = http(url)
+            except urllib.error.HTTPError as e:
+                if e.code in (404, 410):
+                    missing.append(f"{ats}/{slug}")
+                else:
+                    errors.append(f"{ats}/{slug}: HTTP {e.code}")
+                continue
+            except Exception as e:  # noqa: BLE001
+                errors.append(f"{ats}/{slug}: {type(e).__name__}")
+                continue
+            if ats == "greenhouse":
+                rows = (js or {}).get("jobs", [])
+            elif ats == "lever":
+                rows = js if isinstance(js, list) else []
+            else:
+                rows = (js or {}).get("jobs", [])
+            for o in rows:
+                if ats == "greenhouse":
+                    title, loc = o.get("title", ""), (o.get("location") or {}).get("name", "")
+                    contract, remote = "", bool(re.search(r"remote", loc, re.I))
+                    url_j, pub, desc = o.get("absolute_url", ""), o.get("updated_at", ""), ""
+                    jid = o.get("id")
+                elif ats == "lever":
+                    cat = o.get("categories") or {}
+                    title, loc = o.get("text", ""), cat.get("location", "") or ""
+                    contract = cat.get("commitment", "") or ""
+                    remote = o.get("workplaceType") == "remote" or bool(re.search(r"remote", loc, re.I))
+                    url_j, pub, desc = o.get("hostedUrl", ""), _epoch_iso(o.get("createdAt")), o.get("descriptionPlain", "")
+                    jid = o.get("id")
+                else:
+                    title, loc = o.get("title", ""), o.get("location", "") or ""
+                    contract = o.get("employmentType", "") or ""
+                    remote = bool(o.get("isRemote")) or bool(re.search(r"remote", loc, re.I))
+                    url_j, pub, desc = o.get("jobUrl", ""), o.get("publishedAt", ""), o.get("descriptionPlain", "")
+                    jid = o.get("id")
+                if not remote or not DEVOPS_RE.search(title):
+                    continue
+                out.append(
+                    {
+                        "source": ats.capitalize(),
+                        "id": f"{ats}-{slug}-{jid}",
+                        "title": title,
+                        "company": slug,
+                        "location": loc,
+                        "contract": contract,
+                        "salary": "",
+                        "remoteHint": True,
+                        "published": pub,
+                        "url": url_j,
+                        "description": clean(desc),
+                        "country": "",
+                    }
+                )
+            time.sleep(0.3)
+    if missing:
+        errors.append("ATS boards not found (remove from ATS_BOARDS): " + ", ".join(missing))
+    return out
+
+
 # --- JobServe / CareerBoard via Apify (paid per result, optional) ----------
 # Actor: https://apify.com/fetchclub/jobserve-jobs-scraper (~$3 per 1,000 jobs).
 # Runs once a day with small caps so it stays inside Apify's free monthly credit.
@@ -624,7 +787,7 @@ def main():
             old_doc = {}
     old = {j["id"]: j for j in old_doc.get("jobs", [])}
 
-    fresh = fetch_ft(errors) + fetch_reed(errors) + fetch_free_feeds(errors) + fetch_pages(errors)
+    fresh = fetch_ft(errors) + fetch_reed(errors) + fetch_free_feeds(errors) + fetch_pages(errors) + fetch_himalayas(errors) + fetch_ats(errors)
 
     # Apify (paid per result): run at most once every APIFY_EVERY_HOURS.
     apify_at = old_doc.get("apifyAt", "")

@@ -825,8 +825,11 @@ def main():
         j["firstSeen"] = prev["firstSeen"] if prev else now.isoformat(timespec="seconds")
         jobs[j["id"]] = j
     cutoff = now - timedelta(days=KEEP_DAYS)
+    # Company boards and Himalayas list only current openings (and Himalayas asks to drop expired jobs),
+    # so never carry their old entries over.
+    live_only = {"Greenhouse", "Lever", "Ashby", "Himalayas"}
     for jid, j in old.items():
-        if jid in jobs:
+        if jid in jobs or j.get("source") in live_only:
             continue
         try:
             seen = datetime.fromisoformat(j.get("firstSeen", ""))

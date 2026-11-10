@@ -526,7 +526,10 @@ def fetch_himalayas(errors):
                     continue
                 seen.add(jid)
                 lr = o.get("locationRestrictions")
-                loc = ", ".join(str(x) for x in lr) if isinstance(lr, list) and lr else "Worldwide"
+                if isinstance(lr, list) and lr:
+                    loc = ", ".join(str(x) for x in lr) if len(lr) <= 6 else f"{len(lr)} countries incl. {'France' if 'France' in lr else lr[0]}"
+                else:
+                    loc = "Worldwide"
                 tz = o.get("timezoneRestrictions")
                 if tz:
                     loc += " · tz " + (", ".join(str(x) for x in tz) if isinstance(tz, list) else str(tz))
@@ -557,12 +560,21 @@ def fetch_himalayas(errors):
 # Edit these lists freely: a wrong or closed board just returns 404 and is reported once.
 ATS_BOARDS = {
     "greenhouse": ["gitlab", "cloudflare", "datadog", "mongodb", "elastic", "fastly", "pagerduty",
-                   "digitalocean", "circleci", "sentry", "vercel", "grafanalabs", "twilio", "okta",
-                   "dropbox", "stripe", "discord", "coinbase", "reddit", "gusto", "hashicorp"],
-    "lever": ["palantir", "spotify", "kraken", "wealthsimple", "shopify", "plaid", "binance"],
-    "ashby": ["ramp", "notion", "linear", "deel", "supabase", "posthog", "retool", "vanta",
+                   "circleci", "vercel", "grafanalabs", "twilio", "okta",
+                   "dropbox", "stripe", "discord", "coinbase", "reddit", "gusto"],
+    "lever": ["palantir", "spotify", "kraken", "wealthsimple", "binance"],
+    "ashby": ["ramp", "notion", "linear", "deel", "supabase", "posthog", "vanta",
               "1password", "mercury", "cohere", "temporal", "render", "railway"],
 }
+
+
+ATS_TITLE_RE = re.compile(
+    r"devops|dev ops|\bsre\b|site reliability|reliability engineer|platform engineer|infrastructure engineer|"
+    r"cloud engineer|systems? engineer|kubernetes|devsecops|release engineer|build engineer|production engineer",
+    re.I,
+)
+ATS_SKIP_RE = re.compile(r"manager|director|head of|vp\b|product|designer|sales|marketing|recruit|account|counsel|partner", re.I)
+ATS_EMPLOYEE_RE = re.compile(r"full[ -]?time|permanent|part[ -]?time|intern", re.I)
 
 
 def fetch_ats(errors):
@@ -611,7 +623,10 @@ def fetch_ats(errors):
                     remote = bool(o.get("isRemote")) or bool(re.search(r"remote", loc, re.I))
                     url_j, pub, desc = o.get("jobUrl", ""), o.get("publishedAt", ""), o.get("descriptionPlain", "")
                     jid = o.get("id")
-                if not remote or not DEVOPS_RE.search(title):
+                if not remote or not ATS_TITLE_RE.search(title) or ATS_SKIP_RE.search(title):
+                    continue
+                # He only takes contract work: skip roles the board marks as employee roles.
+                if contract and ATS_EMPLOYEE_RE.search(contract) and not re.search(r"contract", f"{title} {contract}", re.I):
                     continue
                 out.append(
                     {

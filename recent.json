@@ -1,10 +1,10 @@
 {
- "generatedAt": "2026-11-11T16:09:18+00:00",
+ "generatedAt": "2026-11-11T17:19:15+00:00",
  "windowDays": 3,
  "counts": {
-  "Reed": 173,
+  "Reed": 174,
+  "Collective": 90,
   "Jobicy": 35,
-  "Collective": 89,
   "We Work Remotely": 33,
   "JobServe": 78,
   "CareerBoard": 32,
@@ -16,9 +16,54 @@
   "RemoteOK": 32
  },
  "errors": [
-  "France Travail token: HTTP 400 invalid_client: Client authentication failed"
+  "France Travail token: HTTP 400 invalid_client: Client authentication failed",
+  "ITJobsWatch page: HTTP 404",
+  "Morson: no job data read from morson.com/jobs/it-and-digital/contract/england/devops-engin (needs a custom parser or is blocked)",
+  "Jefferson Frank page: HTTP 403",
+  "Experis: no job data read from www.experis.co.uk/jobs?keywords=devops+outside+ir35 (needs a custom parser or is blocked)",
+  "Freelancermap: no job data read from www.freelancermap.com/projects/platform-engineering (needs a custom parser or is blocked)",
+  "Freelancermap: no job data read from www.freelancermap.com/projects/kubernetes (needs a custom parser or is blocked)",
+  "Freelancermap: no job data read from www.freelancermap.de/projekte/azure-kubernetes (needs a custom parser or is blocked)",
+  "GULP: no job data read from www.gulp.de/gulp2/g/projekte?query=devops%20remote (needs a custom parser or is blocked)",
+  "GULP page: HTTP 404",
+  "Jobgether page: HTTP 403",
+  "Jobgether page: HTTP 403",
+  "Crossover: no job data read from www.crossover.com/job-roles/devops-engineer/united-arab-emir (needs a custom parser or is blocked)",
+  "Justjoin.it: no job data read from justjoin.it/job-offers/remote/devops (needs a custom parser or is blocked)",
+  "Arc: no job data read from arc.dev/remote-jobs?q=devops (needs a custom parser or is blocked)",
+  "Xebia Poland: HTTPError"
  ],
  "jobs": [
+  {
+   "source": "Reed",
+   "id": "reed-57447207",
+   "title": "BE AI Engineer (Contract)",
+   "company": "Harnham - Data & Analytics Recruitment",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "500.0–580.0 GBP",
+   "remoteHint": true,
+   "published": "12/10/2026",
+   "url": "https://www.reed.co.uk/jobs/be-ai-engineer-contract/57447207",
+   "description": "Contract Lead Node.js Engineer (HubSpot &amp; Commercial Systems) Fully Remote Outside IR35 500 - 580 Per Day 8 Month Duration The Company They are a global technology and digital marketing organisation operating at scale across online consumer platforms. Their products combine data, technology, content, and partnerships to connect highly engaged audiences with relevant digital experiences. With a",
+   "firstSeen": "2026-11-11T17:19:15+00:00"
+  },
+  {
+   "source": "Collective",
+   "id": "collective-cmwcd8mo81ksj4of9h9hs1soy",
+   "title": "Développeur Python Senior / Ingénieur DevOps CI/CD",
+   "company": "Anderson RH",
+   "location": "{\"fullNameEnglish\": \"Paris, France\", \"fullNameFrench\": \"Paris, France\"}",
+   "contract": "FREELANCE",
+   "salary": "",
+   "remoteHint": true,
+   "workPreferences": "[\"HYBRID\"]",
+   "published": "2026-11-11T17:01:16.639Z",
+   "url": "https://www.collective.work/job/developpeur-python-senior-ingenieur-devops-cicd-rrd1",
+   "description": "Contexte Dans le cadre de l&#39;industrialisation et de l&#39;amélioration continue de ses plateformes d&#39;intégration continue, nous recherchons un Développeur Python Senior disposant d&#39;une solide expertise dans l&#39;administration des outils CI/CD. Le consultant interviendra sur le développement de services d&#39;automatisation, l&#39;administration technique des plateformes CI et leur in",
+   "country": "",
+   "firstSeen": "2026-11-11T17:19:15+00:00"
+  },
   {
    "source": "Reed",
    "id": "reed-57558047",
@@ -955,22 +1000,6 @@
    "firstSeen": "2026-11-10T21:47:47+00:00"
   },
   {
-   "source": "Collective",
-   "id": "collective-cmwax7rzq00ua4ocefj9cg53n",
-   "title": "DevOps Dataviz",
-   "company": "Yeets",
-   "location": "{\"fullNameEnglish\": \"94120 Fontenay-sous-Bois, France\", \"fullNameFrench\": \"94120 Fontenay-sous-Bois, France\"}",
-   "contract": "FREELANCE",
-   "salary": "450",
-   "remoteHint": false,
-   "workPreferences": "[\"HYBRID\"]",
-   "published": "2026-11-10T16:44:56.854Z",
-   "url": "https://www.collective.work/job/devops-dataviz-sqfr",
-   "description": "Mission principale • Assurer l'intégration, la configuration et l'administration fonctionnelle des outils de data visualisation et de préparation simple des données au sein de l'équipe Produits de Data Solutions, équipe de développement de solutions Data. • Garantir que les outils sont correctement paramétrés, sécurisés et exploitables (et donc documentés), avec pour cible leur transfert dans un c",
-   "country": "",
-   "firstSeen": "2026-11-10T21:47:47+00:00"
-  },
-  {
    "source": "Freelance-Informatique",
    "id": "freelance-informatique-mission-sysops-azure-sur-nanterre-261110C003",
    "title": "SysOps Azure",
@@ -998,6 +1027,22 @@
    "url": "https://www.freelance-informatique.fr/mission-senior-analytics-engineer-261110C002",
    "description": "About Lenstra Lenstra was founded by engineers with a passion for Computer Science and a track record of delivering high-quality solutions. We work at the intersection of Cloud Computing, DevOps, Data Platforms and IT Security, helping top-tier clients in Banking, Insurance, Luxury and Tech solve their hardest technical challenges. On data, we don’t just plug tools together: we define the Data Pla",
    "country": "FR",
+   "firstSeen": "2026-11-10T21:47:47+00:00"
+  },
+  {
+   "source": "Collective",
+   "id": "collective-cmwax7rzq00ua4ocefj9cg53n",
+   "title": "DevOps Dataviz",
+   "company": "Yeets",
+   "location": "{\"fullNameEnglish\": \"94120 Fontenay-sous-Bois, France\", \"fullNameFrench\": \"94120 Fontenay-sous-Bois, France\"}",
+   "contract": "FREELANCE",
+   "salary": "450",
+   "remoteHint": false,
+   "workPreferences": "[\"HYBRID\"]",
+   "published": "2026-11-10T16:44:56.854Z",
+   "url": "https://www.collective.work/job/devops-dataviz-sqfr",
+   "description": "Mission principale • Assurer l'intégration, la configuration et l'administration fonctionnelle des outils de data visualisation et de préparation simple des données au sein de l'équipe Produits de Data Solutions, équipe de développement de solutions Data. • Garantir que les outils sont correctement paramétrés, sécurisés et exploitables (et donc documentés), avec pour cible leur transfert dans un c",
+   "country": "",
    "firstSeen": "2026-11-10T21:47:47+00:00"
   },
   {
@@ -4696,7 +4741,7 @@
    "remoteHint": true,
    "published": "2026-07-24T00:09:16+00:00",
    "url": "https://remoteOK.com/remote-jobs/remote-analista-de-infraestrutura-pleno-devops-melhor-envio-1135334",
-   "description": "Anunciada 00:00:00. Com senso de dono e colaboraÃ§Ã£o, unimos forÃ§as para remover barreiras e impulsionarnegÃ³cios. NÃ£oâ¦ - veja esta vaga e outras semelhantes no LinkedIn. Please mention the word **REFORMING** and tag RMTcyLjIwOC41OS4xNzQ= when applying to show you read the job post completely (#RMTcyLjIwOC41OS4xNzQ=). This is a beta feature to avoid spam applicants. Companies can search these",
+   "description": "Anunciada 00:00:00. Com senso de dono e colaboraÃ§Ã£o, unimos forÃ§as para remover barreiras e impulsionarnegÃ³cios. NÃ£oâ¦ - veja esta vaga e outras semelhantes no LinkedIn. Please mention the word **REFORMING** and tag RMjAuNjIuMjU0LjEzOA== when applying to show you read the job post completely (#RMjAuNjIuMjU0LjEzOA==). This is a beta feature to avoid spam applicants. Companies can search these",
    "country": "",
    "firstSeen": "2026-11-09T13:41:20+00:00"
   },

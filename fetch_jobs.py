@@ -477,6 +477,66 @@ def _get_text_ua(url, timeout=30):
         return r.read().decode("utf-8", "replace")
 
 
+
+# --- Extra boards for freelance / contract DevOps work done from outside the client's country ----
+# Added on request: UK contract agencies (Outside IR35, remote), DACH freelance boards, Gulf and
+# global remote boards, Recruitee career pages. Public listing pages only, no login, no forms.
+# Pages that embed schema.org JobPosting data are read directly. A page that gives no job data
+# (many are JavaScript apps or block bots) is reported in "errors" so a custom parser can be added later.
+# Talent networks with no public job list (Toptal, Turing, Andela, Arc screening) are manual: apply once.
+EXTRA_PAGES = [
+    ("ITJobsWatch", "https://www.itjobswatch.co.uk/jobs/uk/remote/devops.do"),
+    ("Morson", "https://morson.com/jobs/it-and-digital/contract/england/devops-engineer-aws-remote-outside-ir35"),
+    ("Jefferson Frank", "https://jeffersonfrank.com/jobs?keywords=devops+remote+outside+ir35"),
+    ("Experis", "https://www.experis.co.uk/jobs?keywords=devops+outside+ir35"),
+    ("Freelancermap", "https://www.freelancermap.com/projects/platform-engineering"),
+    ("Freelancermap", "https://www.freelancermap.com/projects/kubernetes"),
+    ("Freelancermap", "https://www.freelancermap.de/projekte/azure-kubernetes"),
+    ("GULP", "https://www.gulp.de/gulp2/g/projekte?query=devops%20remote"),
+    ("GULP", "https://www.gulp.ch/gulp2/g/projekte?query=devops%20remote"),
+    ("Jobgether", "https://jobgether.com/remote-jobs/united-arab-emirates/devops-infrastructure"),
+    ("Jobgether", "https://jobgether.com/remote-jobs/europe/devops-infrastructure"),
+    ("Crossover", "https://www.crossover.com/job-roles/devops-engineer/united-arab-emirates"),
+    ("Justjoin.it", "https://justjoin.it/job-offers/remote/devops"),
+    ("Arc", "https://arc.dev/remote-jobs?q=devops"),
+]
+# Recruitee career sites expose an open JSON API: https://<slug>.recruitee.com/api/offers/
+RECRUITEE_BOARDS = {"Xebia Poland": "xebiapoland"}
+
+
+def fetch_extra(errors):
+    out = []
+    for source, url in EXTRA_PAGES:
+        try:
+            page = _get_text_ua(url)
+            jobs = [j for j in _jsonld_jobs(source, page) if DEVOPS_RE.search(f"{j['title']} {j['description']}")]
+            if not jobs:
+                errors.append(f"{source}: no job data read from {url.split('//')[1][:60]} (needs a custom parser or is blocked)")
+            out += jobs
+        except urllib.error.HTTPError as e:
+            errors.append(f"{source} page: HTTP {e.code}")
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"{source} page: {type(e).__name__}")
+        time.sleep(1)
+    for name, slug in RECRUITEE_BOARDS.items():
+        try:
+            js = json.loads(_get_text(f"https://{slug}.recruitee.com/api/offers/"))
+            for o in js.get("offers", []):
+                title = o.get("title") or ""
+                if not DEVOPS_RE.search(f"{title} {o.get('department') or ''}"):
+                    continue
+                loc = ", ".join(x for x in (o.get("city"), o.get("country")) if x) or o.get("location") or ""
+                job = _free_job(name, o.get("id"), title, name, loc, o.get("employment_type_code") or "",
+                                "", o.get("created_at") or "", o.get("careers_url") or "",
+                                re.sub(r"<[^>]+>", " ", o.get("description") or ""))
+                job.pop("_tags", None)
+                job["remoteHint"] = bool(o.get("remote")) or "remote" in f"{title} {loc}".lower()
+                out.append(job)
+        except Exception as e:  # noqa: BLE001
+            errors.append(f"{name}: {type(e).__name__}")
+    return out
+
+
 # --- Himalayas (free JSON API) ------------------------------------------------
 # Docs: https://himalayas.app/api . Rules: keep the applicationLink unchanged, show Himalayas as the
 # source, drop expired jobs, and show jobs only in the owner's own app (this private tracker).
@@ -802,7 +862,7 @@ def main():
             old_doc = {}
     old = {j["id"]: j for j in old_doc.get("jobs", [])}
 
-    fresh = fetch_ft(errors) + fetch_reed(errors) + fetch_free_feeds(errors) + fetch_pages(errors) + fetch_himalayas(errors) + fetch_ats(errors)
+    fresh = fetch_ft(errors) + fetch_reed(errors) + fetch_free_feeds(errors) + fetch_pages(errors) + fetch_extra(errors) + fetch_himalayas(errors) + fetch_ats(errors)
 
     # Apify (paid per result): run at most once every APIFY_EVERY_HOURS.
     apify_at = old_doc.get("apifyAt", "")

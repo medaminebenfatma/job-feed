@@ -1,10 +1,10 @@
 {
- "generatedAt": "2026-11-11T17:19:15+00:00",
+ "generatedAt": "2026-11-11T22:41:45+00:00",
  "windowDays": 3,
  "counts": {
+  "Jobicy": 36,
+  "Collective": 92,
   "Reed": 174,
-  "Collective": 90,
-  "Jobicy": 35,
   "We Work Remotely": 33,
   "JobServe": 78,
   "CareerBoard": 32,
@@ -35,18 +35,51 @@
  ],
  "jobs": [
   {
-   "source": "Reed",
-   "id": "reed-57447207",
-   "title": "BE AI Engineer (Contract)",
-   "company": "Harnham - Data & Analytics Recruitment",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "500.0–580.0 GBP",
+   "source": "Jobicy",
+   "id": "jobicy-161359",
+   "title": "Senior Platform Engineer",
+   "company": "Filigran",
+   "location": "France",
+   "contract": "Full-Time",
+   "salary": "",
    "remoteHint": true,
-   "published": "12/10/2026",
-   "url": "https://www.reed.co.uk/jobs/be-ai-engineer-contract/57447207",
-   "description": "Contract Lead Node.js Engineer (HubSpot &amp; Commercial Systems) Fully Remote Outside IR35 500 - 580 Per Day 8 Month Duration The Company They are a global technology and digital marketing organisation operating at scale across online consumer platforms. Their products combine data, technology, content, and partnerships to connect highly engaged audiences with relevant digital experiences. With a",
-   "firstSeen": "2026-11-11T17:19:15+00:00"
+   "published": "2026-11-11T17:13:06+00:00",
+   "url": "https://jobicy.com/jobs/161359-senior-platform-engineer-7",
+   "description": "The Company Founded in 2022, Filigran is a global cybersecurity company on a mission to empower defense teams to be proactive through open-source solutions that uncover threats and drive action. Filigran stands out in the cybersecurity ecosystem through its open-source, AI-powered and threat-informed approach to Continuous Threat Exposure Management (CTEM). Our eXtended Threat Management&hellip;",
+   "country": "",
+   "firstSeen": "2026-11-11T22:41:45+00:00"
+  },
+  {
+   "source": "Collective",
+   "id": "collective-cmwcj8vzn0xm34ob11n0r7jre",
+   "title": "Senior DevOps Network - Product Owner",
+   "company": "Surfjob Consulting",
+   "location": "{\"fullNameEnglish\": \"Lille, France\", \"fullNameFrench\": \"Lille, France\"}",
+   "contract": "FULL_TIME",
+   "salary": "",
+   "remoteHint": true,
+   "workPreferences": "[\"HYBRID\", \"ON_SITE\"]",
+   "published": "2026-11-11T19:49:26.411Z",
+   "url": "https://www.collective.work/job/senior-devops-network-product-owner-szoj",
+   "description": "Contexte La Business Unit Cloud Platform Engineering (CPE) a pour mission de rationaliser le catalogue de produits techniques référencés au sein du groupe et de fournir des services clé en main aux équipes IT. L’objectif est de leur permettre de se concentrer sur le développement de fonctionnalités à forte valeur ajoutée, tout en s’appuyant sur des plateformes standardisées, robustes et industrial",
+   "country": "",
+   "firstSeen": "2026-11-11T22:41:45+00:00"
+  },
+  {
+   "source": "Collective",
+   "id": "collective-cmwcfaaqw0by94ubqgxid725n",
+   "title": "Senior DevOps Network GCP Product Owner Automatisation",
+   "company": "Naxo",
+   "location": "{\"fullNameEnglish\": \"Lille, France\", \"fullNameFrench\": \"Lille, France\"}",
+   "contract": "FREELANCE",
+   "salary": "525",
+   "remoteHint": true,
+   "workPreferences": "[\"HYBRID\"]",
+   "published": "2026-11-11T17:58:33.735Z",
+   "url": "https://www.collective.work/job/senior-devops-network-gcp-product-owner-automatisation-mf26",
+   "description": "Contexte La Business Unit Cloud Platform Engineering (CPE) a pour mission de rationaliser le catalogue de produits techniques et de fournir des services clé en main aux équipes IT, via des plateformes standardisées, robustes et industrialisées. L’équipe Network combine l’expertise réseau et les pratiques DevOps pour rationaliser et fiabiliser les opérations réseau, accélérer l’automatisation et am",
+   "country": "",
+   "firstSeen": "2026-11-11T22:41:45+00:00"
   },
   {
    "source": "Collective",
@@ -62,6 +95,20 @@
    "url": "https://www.collective.work/job/developpeur-python-senior-ingenieur-devops-cicd-rrd1",
    "description": "Contexte Dans le cadre de l&#39;industrialisation et de l&#39;amélioration continue de ses plateformes d&#39;intégration continue, nous recherchons un Développeur Python Senior disposant d&#39;une solide expertise dans l&#39;administration des outils CI/CD. Le consultant interviendra sur le développement de services d&#39;automatisation, l&#39;administration technique des plateformes CI et leur in",
    "country": "",
+   "firstSeen": "2026-11-11T17:19:15+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57447207",
+   "title": "BE AI Engineer (Contract)",
+   "company": "Harnham - Data & Analytics Recruitment",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "500.0–580.0 GBP",
+   "remoteHint": true,
+   "published": "12/10/2026",
+   "url": "https://www.reed.co.uk/jobs/be-ai-engineer-contract/57447207",
+   "description": "Contract Lead Node.js Engineer (HubSpot &amp; Commercial Systems) Fully Remote Outside IR35 500 - 580 Per Day 8 Month Duration The Company They are a global technology and digital marketing organisation operating at scale across online consumer platforms. Their products combine data, technology, content, and partnerships to connect highly engaged audiences with relevant digital experiences. With a",
    "firstSeen": "2026-11-11T17:19:15+00:00"
   },
   {
@@ -984,22 +1031,6 @@
    "firstSeen": "2026-11-10T21:47:47+00:00"
   },
   {
-   "source": "Collective",
-   "id": "collective-cmwaxaaul01vt4oblfw7q3y9d",
-   "title": "DevOps CARD",
-   "company": "Yeets",
-   "location": "{\"fullNameEnglish\": \"94120 Fontenay-sous-Bois, France\", \"fullNameFrench\": \"94120 Fontenay-sous-Bois, France\"}",
-   "contract": "FREELANCE",
-   "salary": "450",
-   "remoteHint": false,
-   "workPreferences": "[\"HYBRID\"]",
-   "published": "2026-11-10T16:46:54.596Z",
-   "url": "https://www.collective.work/job/devops-card-n5j1",
-   "description": "Mission principale • Administrateur technique responsable du maintien des outils de cartographie, de l'alimentation et de l'enrichissement des cartographies fonctionnelles et techniques, à travers l'interconnexion entre le dictionnaire de données (OpenMetadata), le catalogue de données métier (Istya) et les produits de la Plateforme Sécurisée des Données (Datalake, requêteur sécurisé des données O",
-   "country": "",
-   "firstSeen": "2026-11-10T21:47:47+00:00"
-  },
-  {
    "source": "Freelance-Informatique",
    "id": "freelance-informatique-mission-sysops-azure-sur-nanterre-261110C003",
    "title": "SysOps Azure",
@@ -1027,6 +1058,22 @@
    "url": "https://www.freelance-informatique.fr/mission-senior-analytics-engineer-261110C002",
    "description": "About Lenstra Lenstra was founded by engineers with a passion for Computer Science and a track record of delivering high-quality solutions. We work at the intersection of Cloud Computing, DevOps, Data Platforms and IT Security, helping top-tier clients in Banking, Insurance, Luxury and Tech solve their hardest technical challenges. On data, we don’t just plug tools together: we define the Data Pla",
    "country": "FR",
+   "firstSeen": "2026-11-10T21:47:47+00:00"
+  },
+  {
+   "source": "Collective",
+   "id": "collective-cmwaxaaul01vt4oblfw7q3y9d",
+   "title": "DevOps CARD",
+   "company": "Yeets",
+   "location": "{\"fullNameEnglish\": \"94120 Fontenay-sous-Bois, France\", \"fullNameFrench\": \"94120 Fontenay-sous-Bois, France\"}",
+   "contract": "FREELANCE",
+   "salary": "450",
+   "remoteHint": false,
+   "workPreferences": "[\"HYBRID\"]",
+   "published": "2026-11-10T16:46:54.596Z",
+   "url": "https://www.collective.work/job/devops-card-n5j1",
+   "description": "Mission principale • Administrateur technique responsable du maintien des outils de cartographie, de l'alimentation et de l'enrichissement des cartographies fonctionnelles et techniques, à travers l'interconnexion entre le dictionnaire de données (OpenMetadata), le catalogue de données métier (Istya) et les produits de la Plateforme Sécurisée des Données (Datalake, requêteur sécurisé des données O",
+   "country": "",
    "firstSeen": "2026-11-10T21:47:47+00:00"
   },
   {
@@ -4582,21 +4629,6 @@
   },
   {
    "source": "Jobicy",
-   "id": "jobicy-159117",
-   "title": "DevOps Engineer, Blockchain Infra (Fully Remote)",
-   "company": "Binance",
-   "location": "Europe,  UAE",
-   "contract": "Full-Time",
-   "salary": "",
-   "remoteHint": true,
-   "published": "2026-11-05T10:54:48+00:00",
-   "url": "https://jobicy.com/jobs/159117-devops-engineer-blockchain-infra-fully-remote-2",
-   "description": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume and registered users. We are trusted by 300+ million people in 100+ countries for our industry-leading security, user fund transparency, trading engine speed, deep liquidity, and an unmatched portfolio of digital-asset products. Binance offerings range from trading and finance&hell",
-   "country": "",
-   "firstSeen": "2026-11-09T13:41:20+00:00"
-  },
-  {
-   "source": "Jobicy",
    "id": "jobicy-154567",
    "title": "Senior Software Engineer, Internal Tooling",
    "company": "RevenueCat",
@@ -4741,7 +4773,7 @@
    "remoteHint": true,
    "published": "2026-07-24T00:09:16+00:00",
    "url": "https://remoteOK.com/remote-jobs/remote-analista-de-infraestrutura-pleno-devops-melhor-envio-1135334",
-   "description": "Anunciada 00:00:00. Com senso de dono e colaboraÃ§Ã£o, unimos forÃ§as para remover barreiras e impulsionarnegÃ³cios. NÃ£oâ¦ - veja esta vaga e outras semelhantes no LinkedIn. Please mention the word **REFORMING** and tag RMjAuNjIuMjU0LjEzOA== when applying to show you read the job post completely (#RMjAuNjIuMjU0LjEzOA==). This is a beta feature to avoid spam applicants. Companies can search these",
+   "description": "Anunciada 00:00:00. Com senso de dono e colaboraÃ§Ã£o, unimos forÃ§as para remover barreiras e impulsionarnegÃ³cios. NÃ£oâ¦ - veja esta vaga e outras semelhantes no LinkedIn. Please mention the word **REFORMING** and tag RNC4xNTAuMTk3LjIxMg== when applying to show you read the job post completely (#RNC4xNTAuMTk3LjIxMg==). This is a beta feature to avoid spam applicants. Companies can search these",
    "country": "",
    "firstSeen": "2026-11-09T13:41:20+00:00"
   },
@@ -5192,6 +5224,21 @@
    "published": "Thu, 15 Oct 2026 07:31:14 +0000",
    "url": "https://weworkremotely.com/remote-jobs/abnormal-customer-solutions-engineer-emea",
    "description": "Headquarters: Remote - Ireland About the Role Abnormal AI is looking for a Customer Solutions Engineer to join the Technical Account Management team. This role gives Abnormal a flexible, technical resource for situations that fall between standard support and a long-term, dedicated Technical Account Manager. Customer Solutions Engineers are floating technical specialists who partner with CSMs for ",
+   "country": "",
+   "firstSeen": "2026-11-09T13:41:20+00:00"
+  },
+  {
+   "source": "Jobicy",
+   "id": "jobicy-159117",
+   "title": "DevOps Engineer, Blockchain Infra (Fully Remote)",
+   "company": "Binance",
+   "location": "Europe,  UAE",
+   "contract": "Full-Time",
+   "salary": "",
+   "remoteHint": true,
+   "published": "2026-11-05T10:54:48+00:00",
+   "url": "https://jobicy.com/jobs/159117-devops-engineer-blockchain-infra-fully-remote-2",
+   "description": "Binance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume and registered users. We are trusted by 300+ million people in 100+ countries for our industry-leading security, user fund transparency, trading engine speed, deep liquidity, and an unmatched portfolio of digital-asset products. Binance offerings range from trading and finance&hell",
    "country": "",
    "firstSeen": "2026-11-09T13:41:20+00:00"
   },
@@ -5839,51 +5886,6 @@
    "description": "Lambda, The Superintelligence Cloud, is a leader in AI cloud infrastructure serving tens of thousands of customers. Our customers range from AI researchers to enterprises and hyperscalers. Lambda's mission is to make compute as ubiquitous as electricity and give everyone the power of superintelligence. One person, one GPU. If you'd like to build the world's&hellip;",
    "country": "",
    "firstSeen": "2026-11-09T13:41:20+00:00"
-  },
-  {
-   "source": "JobServe",
-   "id": "jobserve-JSDBB92A5C6A26094330BED4D7267BF735C3135",
-   "title": "Business Analyst-eFRONT",
-   "company": "Talent Today",
-   "location": "Remote, UK",
-   "contract": "Contract",
-   "salary": "Remote",
-   "remoteHint": true,
-   "published": "2026-11-08T20:19:35",
-   "url": "http://www.jobserve.com/hQqba",
-   "duration": null,
-   "description": "SENIOR BUSINESS ANALYST - eFRONT ?? Remote | Contract We're looking for an experienced Senior Business Analyst with strong eFront and Closed Ended Funds experience to support a key technology transformation programme within the financial services sector. Key requirements: 5+ years' Business Analysis experience. 2+ years' hands-on eFront project experience. ESSENTIAL Strong understanding of Closed ",
-   "firstSeen": "2026-11-08T20:28:14+00:00"
-  },
-  {
-   "source": "JobServe",
-   "id": "jobserve-JS3212073185",
-   "title": "Azure Cloud Architect",
-   "company": "Bright Vision Technologies",
-   "location": "Remote, Oregon, United States of America",
-   "contract": "Contract",
-   "salary": "USD",
-   "remoteHint": true,
-   "published": "2026-07-11T20:15:52",
-   "url": "http://www.jobserve.com/hQYVZ",
-   "duration": null,
-   "description": "Bright Vision Technologies is a technology consulting and software development company delivering cloud, AI, data, and enterprise solutions across the United States. This is an opportunity to contribute to technology initiatives in a collaborative environment with opportunities for professional growth. Job Title: Azure Cloud Architect Location: Remote Position Type: Contract Experience Required: 1",
-   "firstSeen": "2026-11-08T20:28:14+00:00"
-  },
-  {
-   "source": "CareerBoard",
-   "id": "careerboard-JSDBB92A5C6A26094330BED4D7267BF735C3135",
-   "title": "Business Analyst-eFRONT",
-   "company": "Talent Today",
-   "location": "Remote, UK",
-   "contract": "Contract",
-   "salary": "Remote",
-   "remoteHint": true,
-   "published": "2026-11-08T20:19:35",
-   "url": "http://www.careerboard.com/hQqba",
-   "duration": null,
-   "description": "SENIOR BUSINESS ANALYST - eFRONT ?? Remote | Contract We're looking for an experienced Senior Business Analyst with strong eFront and Closed Ended Funds experience to support a key technology transformation programme within the financial services sector. Key requirements: 5+ years' Business Analysis experience. 2+ years' hands-on eFront project experience. ESSENTIAL Strong understanding of Closed ",
-   "firstSeen": "2026-11-08T20:28:14+00:00"
   }
  ]
 }

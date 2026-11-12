@@ -1,14 +1,14 @@
 {
- "generatedAt": "2026-11-11T22:41:45+00:00",
+ "generatedAt": "2026-11-12T07:08:10+00:00",
  "windowDays": 3,
  "counts": {
   "Jobicy": 36,
   "Collective": 92,
   "Reed": 174,
   "We Work Remotely": 33,
+  "Indeed": 21,
   "JobServe": 78,
   "CareerBoard": 32,
-  "Indeed": 21,
   "Freelance-Informatique": 33,
   "Greenhouse": 30,
   "Himalayas": 38,
@@ -31,7 +31,8 @@
   "Crossover: no job data read from www.crossover.com/job-roles/devops-engineer/united-arab-emir (needs a custom parser or is blocked)",
   "Justjoin.it: no job data read from justjoin.it/job-offers/remote/devops (needs a custom parser or is blocked)",
   "Arc: no job data read from arc.dev/remote-jobs?q=devops (needs a custom parser or is blocked)",
-  "Xebia Poland: HTTPError"
+  "Xebia Poland: HTTPError",
+  "Apify JobServe United Kingdom DevOps: HTTP 401 User was not found or authentication token is not valid"
  ],
  "jobs": [
   {
@@ -82,6 +83,20 @@
    "firstSeen": "2026-11-11T22:41:45+00:00"
   },
   {
+   "source": "Reed",
+   "id": "reed-57447207",
+   "title": "BE AI Engineer (Contract)",
+   "company": "Harnham - Data & Analytics Recruitment",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "500.0–580.0 GBP",
+   "remoteHint": true,
+   "published": "12/10/2026",
+   "url": "https://www.reed.co.uk/jobs/be-ai-engineer-contract/57447207",
+   "description": "Contract Lead Node.js Engineer (HubSpot &amp; Commercial Systems) Fully Remote Outside IR35 500 - 580 Per Day 8 Month Duration The Company They are a global technology and digital marketing organisation operating at scale across online consumer platforms. Their products combine data, technology, content, and partnerships to connect highly engaged audiences with relevant digital experiences. With a",
+   "firstSeen": "2026-11-11T17:19:15+00:00"
+  },
+  {
    "source": "Collective",
    "id": "collective-cmwcd8mo81ksj4of9h9hs1soy",
    "title": "Développeur Python Senior / Ingénieur DevOps CI/CD",
@@ -95,20 +110,6 @@
    "url": "https://www.collective.work/job/developpeur-python-senior-ingenieur-devops-cicd-rrd1",
    "description": "Contexte Dans le cadre de l&#39;industrialisation et de l&#39;amélioration continue de ses plateformes d&#39;intégration continue, nous recherchons un Développeur Python Senior disposant d&#39;une solide expertise dans l&#39;administration des outils CI/CD. Le consultant interviendra sur le développement de services d&#39;automatisation, l&#39;administration technique des plateformes CI et leur in",
    "country": "",
-   "firstSeen": "2026-11-11T17:19:15+00:00"
-  },
-  {
-   "source": "Reed",
-   "id": "reed-57447207",
-   "title": "BE AI Engineer (Contract)",
-   "company": "Harnham - Data & Analytics Recruitment",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "500.0–580.0 GBP",
-   "remoteHint": true,
-   "published": "12/10/2026",
-   "url": "https://www.reed.co.uk/jobs/be-ai-engineer-contract/57447207",
-   "description": "Contract Lead Node.js Engineer (HubSpot &amp; Commercial Systems) Fully Remote Outside IR35 500 - 580 Per Day 8 Month Duration The Company They are a global technology and digital marketing organisation operating at scale across online consumer platforms. Their products combine data, technology, content, and partnerships to connect highly engaged audiences with relevant digital experiences. With a",
    "firstSeen": "2026-11-11T17:19:15+00:00"
   },
   {
@@ -396,6 +397,21 @@
    "url": "https://www.collective.work/job/expert-ia-generative-llm-industrialisation-and-devsecops-mfwt",
    "description": "Contexte Nous recherchons un Expert IA Générative / LLM pour accompagner l&#39;un de ses clients majeurs du secteur de la protection sociale dans un projet stratégique d&#39;industrialisation de l&#39;intelligence artificielle au sein de sa DSI. Missions Concevoir et industrialiser des solutions d&#39;IA générative intégrées aux processus de développement logiciel. Développer et déployer des agent",
    "country": "",
+   "firstSeen": "2026-11-11T06:14:41+00:00"
+  },
+  {
+   "source": "Indeed",
+   "id": "indeed-94869171db2c4020",
+   "title": "Go Platform Engineer",
+   "company": "All IT Solutions LLC",
+   "location": "Jersey City, NJ",
+   "contract": "contract",
+   "salary": "",
+   "remoteHint": true,
+   "published": "2026-11-10",
+   "url": "https://www.indeed.com/viewjob?jk=94869171db2c4020",
+   "description": "",
+   "country": "US",
    "firstSeen": "2026-11-11T06:14:41+00:00"
   },
   {
@@ -819,21 +835,6 @@
    "firstSeen": "2026-11-11T06:14:41+00:00"
   },
   {
-   "source": "Indeed",
-   "id": "indeed-94869171db2c4020",
-   "title": "Go Platform Engineer",
-   "company": "All IT Solutions LLC",
-   "location": "Jersey City, NJ",
-   "contract": "contract",
-   "salary": "",
-   "remoteHint": true,
-   "published": "2026-11-10",
-   "url": "https://www.indeed.com/viewjob?jk=94869171db2c4020",
-   "description": "",
-   "country": "US",
-   "firstSeen": "2026-11-11T06:14:41+00:00"
-  },
-  {
    "source": "Reed",
    "id": "reed-57555229",
    "title": "Senior Azure DevOps Engineer - Fabric",
@@ -983,6 +984,36 @@
    "firstSeen": "2026-11-10T21:47:47+00:00"
   },
   {
+   "source": "Freelance-Informatique",
+   "id": "freelance-informatique-mission-sysops-azure-sur-nanterre-261110C003",
+   "title": "SysOps Azure",
+   "company": "Freelance-Informatique",
+   "location": "Nanterre, Ile-de-France",
+   "contract": "CONTRACTOR",
+   "salary": "",
+   "remoteHint": true,
+   "published": "2026-11-10",
+   "url": "https://www.freelance-informatique.fr/mission-sysops-azure-sur-nanterre-261110C003",
+   "description": "Nous recherchons un SysOps Azure pour intervenir chez l’un de nos clients basé à Nanterre , dans le secteur de l’énergie, chez EDF , dans le cadre d’une mission d’exploitation, de maintien en conditions opérationnelles et d’évolution d’une Landing Zone Azure/BLEU sécurisée et automatisée. Vous interviendrez au sein d’un environnement Cloud Azure reposant sur une architecture Hub &amp;amp Spoke, av",
+   "country": "FR",
+   "firstSeen": "2026-11-10T21:47:47+00:00"
+  },
+  {
+   "source": "Freelance-Informatique",
+   "id": "freelance-informatique-mission-senior-analytics-engineer-261110C002",
+   "title": "Senior Analytics Engineer",
+   "company": "Freelance-Informatique",
+   "location": "PARIS, Ile-de-France",
+   "contract": "CONTRACTOR",
+   "salary": "",
+   "remoteHint": true,
+   "published": "2026-11-10",
+   "url": "https://www.freelance-informatique.fr/mission-senior-analytics-engineer-261110C002",
+   "description": "About Lenstra Lenstra was founded by engineers with a passion for Computer Science and a track record of delivering high-quality solutions. We work at the intersection of Cloud Computing, DevOps, Data Platforms and IT Security, helping top-tier clients in Banking, Insurance, Luxury and Tech solve their hardest technical challenges. On data, we don’t just plug tools together: we define the Data Pla",
+   "country": "FR",
+   "firstSeen": "2026-11-10T21:47:47+00:00"
+  },
+  {
    "source": "Collective",
    "id": "collective-cmwaxxae709o94oal6ptmff7k",
    "title": "Ingénierie d'exploitation Nutanix",
@@ -1028,36 +1059,6 @@
    "url": "https://www.collective.work/job/senior-software-engineer-fullstack-devops-agents-ia-typescript-react-aws-9cvu",
    "description": "Contexte Nous recherchons pour un grand groupe international du secteur de la santé un Software Engineer senior pour rejoindre l’équipe d’une plateforme interne stratégique, utilisée par de nombreuses équipes métier. Un agent IA est intégré à la plateforme pour assister les utilisateurs dans leur travail sur leurs documents, en tenant compte de leur contexte. Le poste porte principalement sur cett",
    "country": "",
-   "firstSeen": "2026-11-10T21:47:47+00:00"
-  },
-  {
-   "source": "Freelance-Informatique",
-   "id": "freelance-informatique-mission-sysops-azure-sur-nanterre-261110C003",
-   "title": "SysOps Azure",
-   "company": "Freelance-Informatique",
-   "location": "Nanterre, Ile-de-France",
-   "contract": "CONTRACTOR",
-   "salary": "",
-   "remoteHint": true,
-   "published": "2026-11-10",
-   "url": "https://www.freelance-informatique.fr/mission-sysops-azure-sur-nanterre-261110C003",
-   "description": "Nous recherchons un SysOps Azure pour intervenir chez l’un de nos clients basé à Nanterre , dans le secteur de l’énergie, chez EDF , dans le cadre d’une mission d’exploitation, de maintien en conditions opérationnelles et d’évolution d’une Landing Zone Azure/BLEU sécurisée et automatisée. Vous interviendrez au sein d’un environnement Cloud Azure reposant sur une architecture Hub &amp;amp Spoke, av",
-   "country": "FR",
-   "firstSeen": "2026-11-10T21:47:47+00:00"
-  },
-  {
-   "source": "Freelance-Informatique",
-   "id": "freelance-informatique-mission-senior-analytics-engineer-261110C002",
-   "title": "Senior Analytics Engineer",
-   "company": "Freelance-Informatique",
-   "location": "PARIS, Ile-de-France",
-   "contract": "CONTRACTOR",
-   "salary": "",
-   "remoteHint": true,
-   "published": "2026-11-10",
-   "url": "https://www.freelance-informatique.fr/mission-senior-analytics-engineer-261110C002",
-   "description": "About Lenstra Lenstra was founded by engineers with a passion for Computer Science and a track record of delivering high-quality solutions. We work at the intersection of Cloud Computing, DevOps, Data Platforms and IT Security, helping top-tier clients in Banking, Insurance, Luxury and Tech solve their hardest technical challenges. On data, we don’t just plug tools together: we define the Data Pla",
-   "country": "FR",
    "firstSeen": "2026-11-10T21:47:47+00:00"
   },
   {
@@ -1475,21 +1476,6 @@
    "published": "2026-11-08T07:46:20+00:00",
    "url": "https://jobicy.com/jobs/159720-director-engineering-platform-2",
    "description": "About Juniper Square Private markets are one of the largest, most complex, and most underserved corners of global finance. Our mission at Juniper Square is to unlock their full potential. We’re the Operations Partner trusted by 2,300+ GPs, unifying technology, data, and fund administration services into a single platform that helps GPs move faster, make&hellip;",
-   "country": "",
-   "firstSeen": "2026-11-10T10:59:29+00:00"
-  },
-  {
-   "source": "Jobicy",
-   "id": "jobicy-152496",
-   "title": "Director of Engineering, Cloud & Reliability",
-   "company": "Boulevard",
-   "location": "USA",
-   "contract": "Full-Time",
-   "salary": "",
-   "remoteHint": true,
-   "published": "2026-11-05T03:05:16+00:00",
-   "url": "https://jobicy.com/jobs/152496-director-of-engineering-cloud-reliability-2",
-   "description": "Who is Boulevard? Boulevard provides the first and only client experience platform for appointment-based, self-care businesses. We empower our customers to give their clients more of the magical moments that matter most. Before launching in 2016, our founders spent months interviewing salon managers and working behind front desks to understand their pain points so we&hellip;",
    "country": "",
    "firstSeen": "2026-11-10T10:59:29+00:00"
   },
@@ -2518,6 +2504,21 @@
    "published": "2026-11-09T19:55:37-05:00",
    "url": "https://job-boards.greenhouse.io/reddit/jobs/8018555",
    "description": "",
+   "country": "",
+   "firstSeen": "2026-11-10T10:59:29+00:00"
+  },
+  {
+   "source": "Jobicy",
+   "id": "jobicy-152496",
+   "title": "Director of Engineering, Cloud & Reliability",
+   "company": "Boulevard",
+   "location": "USA",
+   "contract": "Full-Time",
+   "salary": "",
+   "remoteHint": true,
+   "published": "2026-11-05T03:05:16+00:00",
+   "url": "https://jobicy.com/jobs/152496-director-of-engineering-cloud-reliability-2",
+   "description": "Who is Boulevard? Boulevard provides the first and only client experience platform for appointment-based, self-care businesses. We empower our customers to give their clients more of the magical moments that matter most. Before launching in 2016, our founders spent months interviewing salon managers and working behind front desks to understand their pain points so we&hellip;",
    "country": "",
    "firstSeen": "2026-11-10T10:59:29+00:00"
   },
@@ -4629,36 +4630,6 @@
   },
   {
    "source": "Jobicy",
-   "id": "jobicy-154567",
-   "title": "Senior Software Engineer, Internal Tooling",
-   "company": "RevenueCat",
-   "location": "APAC,  EMEA,  USA",
-   "contract": "Full-Time",
-   "salary": "",
-   "remoteHint": true,
-   "published": "2026-11-05T03:20:10+00:00",
-   "url": "https://jobicy.com/jobs/154567-senior-software-engineer-internal-tooling",
-   "description": "RevenueCat gives app businesses the infrastructure and tools to build, run, and improve their monetization. Since graduating from YC's S18 batch, we've grown into the default monetization platform for mobile. We're in 50%+ of newly shipped subscription apps, we process $16B+ in annual purchase volume, and we help everyone from a solo developer to the&hellip;",
-   "country": "",
-   "firstSeen": "2026-11-09T13:41:20+00:00"
-  },
-  {
-   "source": "Jobicy",
-   "id": "jobicy-154542",
-   "title": "Senior DevOps Engineer, Observability",
-   "company": "NetBox Labs",
-   "location": "LATAM,  UK,  USA",
-   "contract": "Full-Time",
-   "salary": "",
-   "remoteHint": true,
-   "published": "2026-11-05T03:15:22+00:00",
-   "url": "https://jobicy.com/jobs/154542-senior-devops-engineer-observability",
-   "description": "NetBox Labs is seeking a Senior Devops Engineer to join our rapidly expanding engineering team. We have multiple positions at different seniority levels open across several teams. A Senior DevOps Engineer at NetBox Labs is an infrastructure-minded engineer who treats operations like software - automating, instrumenting, and operating our systems with code. They focus on&hellip;",
-   "country": "",
-   "firstSeen": "2026-11-09T13:41:20+00:00"
-  },
-  {
-   "source": "Jobicy",
    "id": "jobicy-152749",
    "title": "Pre/Post Sales Solutions Architect",
    "company": "Gremlin",
@@ -4773,7 +4744,7 @@
    "remoteHint": true,
    "published": "2026-07-24T00:09:16+00:00",
    "url": "https://remoteOK.com/remote-jobs/remote-analista-de-infraestrutura-pleno-devops-melhor-envio-1135334",
-   "description": "Anunciada 00:00:00. Com senso de dono e colaboraÃ§Ã£o, unimos forÃ§as para remover barreiras e impulsionarnegÃ³cios. NÃ£oâ¦ - veja esta vaga e outras semelhantes no LinkedIn. Please mention the word **REFORMING** and tag RNC4xNTAuMTk3LjIxMg== when applying to show you read the job post completely (#RNC4xNTAuMTk3LjIxMg==). This is a beta feature to avoid spam applicants. Companies can search these",
+   "description": "Anunciada 00:00:00. Com senso de dono e colaboraÃ§Ã£o, unimos forÃ§as para remover barreiras e impulsionarnegÃ³cios. NÃ£oâ¦ - veja esta vaga e outras semelhantes no LinkedIn. Please mention the word **REFORMING** and tag RNDguMjE0LjE0OS41NQ== when applying to show you read the job post completely (#RNDguMjE0LjE0OS41NQ==). This is a beta feature to avoid spam applicants. Companies can search these",
    "country": "",
    "firstSeen": "2026-11-09T13:41:20+00:00"
   },
@@ -5224,6 +5195,36 @@
    "published": "Thu, 15 Oct 2026 07:31:14 +0000",
    "url": "https://weworkremotely.com/remote-jobs/abnormal-customer-solutions-engineer-emea",
    "description": "Headquarters: Remote - Ireland About the Role Abnormal AI is looking for a Customer Solutions Engineer to join the Technical Account Management team. This role gives Abnormal a flexible, technical resource for situations that fall between standard support and a long-term, dedicated Technical Account Manager. Customer Solutions Engineers are floating technical specialists who partner with CSMs for ",
+   "country": "",
+   "firstSeen": "2026-11-09T13:41:20+00:00"
+  },
+  {
+   "source": "Jobicy",
+   "id": "jobicy-154567",
+   "title": "Senior Software Engineer, Internal Tooling",
+   "company": "RevenueCat",
+   "location": "APAC,  EMEA,  USA",
+   "contract": "Full-Time",
+   "salary": "",
+   "remoteHint": true,
+   "published": "2026-11-05T03:20:10+00:00",
+   "url": "https://jobicy.com/jobs/154567-senior-software-engineer-internal-tooling",
+   "description": "RevenueCat gives app businesses the infrastructure and tools to build, run, and improve their monetization. Since graduating from YC's S18 batch, we've grown into the default monetization platform for mobile. We're in 50%+ of newly shipped subscription apps, we process $16B+ in annual purchase volume, and we help everyone from a solo developer to the&hellip;",
+   "country": "",
+   "firstSeen": "2026-11-09T13:41:20+00:00"
+  },
+  {
+   "source": "Jobicy",
+   "id": "jobicy-154542",
+   "title": "Senior DevOps Engineer, Observability",
+   "company": "NetBox Labs",
+   "location": "LATAM,  UK,  USA",
+   "contract": "Full-Time",
+   "salary": "",
+   "remoteHint": true,
+   "published": "2026-11-05T03:15:22+00:00",
+   "url": "https://jobicy.com/jobs/154542-senior-devops-engineer-observability",
+   "description": "NetBox Labs is seeking a Senior Devops Engineer to join our rapidly expanding engineering team. We have multiple positions at different seniority levels open across several teams. A Senior DevOps Engineer at NetBox Labs is an infrastructure-minded engineer who treats operations like software - automating, instrumenting, and operating our systems with code. They focus on&hellip;",
    "country": "",
    "firstSeen": "2026-11-09T13:41:20+00:00"
   },

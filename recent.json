@@ -1,10 +1,10 @@
 {
- "generatedAt": "2026-11-14T17:59:14+00:00",
+ "generatedAt": "2026-11-14T23:54:17+00:00",
  "windowDays": 3,
  "counts": {
-  "Reed": 192,
   "Jobicy": 50,
-  "Himalayas": 38,
+  "Himalayas": 37,
+  "Reed": 192,
   "We Work Remotely": 34,
   "Collective": 155,
   "Freelance-Informatique": 39,
@@ -31,52 +31,9 @@
   "Crossover: no job data read from www.crossover.com/job-roles/devops-engineer/united-arab-emir (needs a custom parser or is blocked)",
   "Justjoin.it: no job data read from justjoin.it/job-offers/remote/devops (needs a custom parser or is blocked)",
   "Arc: no job data read from arc.dev/remote-jobs?q=devops (needs a custom parser or is blocked)",
-  "Xebia Poland: HTTPError",
-  "Himalayas devops: HTTP 429"
+  "Xebia Poland: HTTPError"
  ],
  "jobs": [
-  {
-   "source": "Reed",
-   "id": "reed-57457409",
-   "title": "Cloud Architect (AWS)",
-   "company": "Sanderson ",
-   "location": "Bristol",
-   "contract": "Contract",
-   "salary": "700.0–850.0 GBP",
-   "remoteHint": false,
-   "published": "14/10/2026",
-   "url": "https://www.reed.co.uk/jobs/cloud-architect-aws/57457409",
-   "description": "Infrastructure/Cloud Architect (AWS) Hybrid - 1 day per week on site in Bristol. 700- 850 per day (umbrella engagement) Our client, a leading organisation based in Bristol, is looking to hire a Cloud Architect with an Infrastructure Architect background. The primary purpose of the role is to own and develop the technical architecture for our client's infrastructure. Responsible for leading, develo",
-   "firstSeen": "2026-11-14T17:59:14+00:00"
-  },
-  {
-   "source": "Reed",
-   "id": "reed-57421298",
-   "title": "Cloud Architect (AWS)",
-   "company": "Sanderson ",
-   "location": "Bristol",
-   "contract": "Contract",
-   "salary": "700.0–800.0 GBP",
-   "remoteHint": false,
-   "published": "05/10/2026",
-   "url": "https://www.reed.co.uk/jobs/cloud-architect-aws/57421298",
-   "description": "Infrastructure/Cloud Architect (AWS) Hybrid - 1 day per week on site in Bristol. 700- 850 per day (umbrella engagement) Our client, a leading organisation based in Bristol, is looking to hire a Cloud Architect with an Infrastructure Architect background. The primary purpose of the role is to own and develop the technical architecture for our client's infrastructure. Responsible for leading, develo",
-   "firstSeen": "2026-11-14T17:59:14+00:00"
-  },
-  {
-   "source": "Reed",
-   "id": "reed-57559786",
-   "title": "Power BI Engineer",
-   "company": "Advanced Resource Managers Limited",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "",
-   "remoteHint": false,
-   "published": "11/11/2026",
-   "url": "https://www.reed.co.uk/jobs/power-bi-engineer/57559786",
-   "description": "Power BI Engineer - Workiva 3-Month contract - Inside IR35 - market rate London based - hybrid working - 2 days a week onsite Insurance sector Role purpose Build the controlled end-user report, template, dashboard or submission output using the approved last-mile reporting platform. Scope of work Report construction and presentation Report templates and reusable components Links, formulas and sema",
-   "firstSeen": "2026-11-14T17:59:14+00:00"
-  },
   {
    "source": "Jobicy",
    "id": "jobicy-162137",
@@ -121,6 +78,48 @@
    "description": "PLEASE NOTE THIS ROLE IS FOR OVERSEAS APPLICATION, NON-U.S. ONLY. NO DOMESTIC (U.S.) APPLICATIONS WILL BE CONSIDERED. Staff Architect About the Role: Scentbird is scaling fast – across ecommerce, subscriptions, personalization, and a growing portfolio of brands. Our platform powers everything we build, and we're looking for a Staff Platform Architect to shape its evolution while helping drive AI-e",
    "country": "",
    "via": "Himalayas (himalayas.app)",
+   "firstSeen": "2026-11-14T17:59:14+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57457409",
+   "title": "Cloud Architect (AWS)",
+   "company": "Sanderson ",
+   "location": "Bristol",
+   "contract": "Contract",
+   "salary": "700.0–850.0 GBP",
+   "remoteHint": false,
+   "published": "14/10/2026",
+   "url": "https://www.reed.co.uk/jobs/cloud-architect-aws/57457409",
+   "description": "Infrastructure/Cloud Architect (AWS) Hybrid - 1 day per week on site in Bristol. 700- 850 per day (umbrella engagement) Our client, a leading organisation based in Bristol, is looking to hire a Cloud Architect with an Infrastructure Architect background. The primary purpose of the role is to own and develop the technical architecture for our client's infrastructure. Responsible for leading, develo",
+   "firstSeen": "2026-11-14T17:59:14+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57421298",
+   "title": "Cloud Architect (AWS)",
+   "company": "Sanderson ",
+   "location": "Bristol",
+   "contract": "Contract",
+   "salary": "700.0–800.0 GBP",
+   "remoteHint": false,
+   "published": "05/10/2026",
+   "url": "https://www.reed.co.uk/jobs/cloud-architect-aws/57421298",
+   "description": "Infrastructure/Cloud Architect (AWS) Hybrid - 1 day per week on site in Bristol. 700- 850 per day (umbrella engagement) Our client, a leading organisation based in Bristol, is looking to hire a Cloud Architect with an Infrastructure Architect background. The primary purpose of the role is to own and develop the technical architecture for our client's infrastructure. Responsible for leading, develo",
+   "firstSeen": "2026-11-14T17:59:14+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57559786",
+   "title": "Power BI Engineer",
+   "company": "Advanced Resource Managers Limited",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "",
+   "remoteHint": false,
+   "published": "11/11/2026",
+   "url": "https://www.reed.co.uk/jobs/power-bi-engineer/57559786",
+   "description": "Power BI Engineer - Workiva 3-Month contract - Inside IR35 - market rate London based - hybrid working - 2 days a week onsite Insurance sector Role purpose Build the controlled end-user report, template, dashboard or submission output using the approved last-mile reporting platform. Scope of work Report construction and presentation Report templates and reusable components Links, formulas and sema",
    "firstSeen": "2026-11-14T17:59:14+00:00"
   },
   {
@@ -207,6 +206,20 @@
    "published": "13/11/2026",
    "url": "https://www.reed.co.uk/jobs/application-engineer/57567494",
    "description": "World Class Defence Organisation based in is currently looking to recruit a Application Engineer subcontractor. Candidates who have previously held positions such as Application Engineer, Application Support Engineer, Infrastructure Engineer, Platform Engineer, DevOps Engineer, Systems Integration Engineer, Middleware Engineer, Disaster Recovery Engineer, PLM Engineer may also have relevant transf",
+   "firstSeen": "2026-11-13T19:40:07+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57566278",
+   "title": "Virtual Desktop Engineer",
+   "company": "Randstad Technologies",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "450.0–451.0 GBP",
+   "remoteHint": false,
+   "published": "13/11/2026",
+   "url": "https://www.reed.co.uk/jobs/virtual-desktop-engineer/57566278",
+   "description": "Virtual Desktop Engineer Duration: 06 months Location: London About the Role We are seeking an experienced Virtual Desktop Engineer to lead the end-to-end design and implementation of our Citrix Cloud-based multisession virtual desktop platform. In this role, you will drive platform engineering standards, solution design, and project delivery across critical VDI services. You will be responsible f",
    "firstSeen": "2026-11-13T19:40:07+00:00"
   },
   {
@@ -556,20 +569,6 @@
    "url": "https://www.freelance-informatique.fr/mission-integrateur-systeme-confirme-sur-chatillon-261113C006",
    "description": "Nous recherchons un Intégrateur Système Confirmé (H/F) pour intervenir chez l’un de nos clients dans le secteur du retail , basé à Châtillon (92) , dans le cadre d’une mission de gestion, de fiabilisation et d’optimisation des environnements de test et des jeux de données associés. Vous interviendrez au sein d’un environnement applicatif e-commerce, en étroite collaboration avec les équipes QA, le",
    "country": "FR",
-   "firstSeen": "2026-11-13T19:40:07+00:00"
-  },
-  {
-   "source": "Reed",
-   "id": "reed-57566278",
-   "title": "Virtual Desktop Engineer",
-   "company": "Randstad Technologies",
-   "location": "London",
-   "contract": "Contract",
-   "salary": "450.0–451.0 GBP",
-   "remoteHint": false,
-   "published": "13/11/2026",
-   "url": "https://www.reed.co.uk/jobs/virtual-desktop-engineer/57566278",
-   "description": "Virtual Desktop Engineer Duration: 06 months Location: London About the Role We are seeking an experienced Virtual Desktop Engineer to lead the end-to-end design and implementation of our Citrix Cloud-based multisession virtual desktop platform. In this role, you will drive platform engineering standards, solution design, and project delivery across critical VDI services. You will be responsible f",
    "firstSeen": "2026-11-13T19:40:07+00:00"
   },
   {
@@ -1349,20 +1348,6 @@
   },
   {
    "source": "Reed",
-   "id": "reed-57562460",
-   "title": "Software Engineer",
-   "company": "Advanced Resource Managers Limited",
-   "location": "Newcastle Upon Tyne",
-   "contract": "Contract",
-   "salary": "60.0–70.0 GBP",
-   "remoteHint": false,
-   "published": "12/11/2026",
-   "url": "https://www.reed.co.uk/jobs/software-engineer/57562460",
-   "description": "Software Engineer 12 month contract Can be based in Newcastle or Guildford Offering up to 70ph Inside IR35 Do you have experience with Java? Do you have experience with Kubernetes or Red Hat OpenShift? Do you want to work with an industry-leading company? If your answer to these is yes, then this could be the role for you! As the Software Engineer, you will be working alongside a market-leading De",
-   "firstSeen": "2026-11-12T16:48:04+00:00"
-  },
-  {
-   "source": "Reed",
    "id": "reed-57561773",
    "title": "Java Developer",
    "company": "Opus Recruitment Solutions Ltd",
@@ -1373,6 +1358,20 @@
    "published": "12/11/2026",
    "url": "https://www.reed.co.uk/jobs/java-developer/57561773",
    "description": "We are hiring for a multiple Java Developer role. Role : Java Developer Location: Multiple location, hybrid Type: Contract / FTC Role Overview We’re looking for an experienced Java Developer to join a high-performing engineering team delivering secure, scalable, enterprise-grade systems. You’ll be working on modernising platforms using Spring Boot/ Docker/ MongoDB and microservices architecture , ",
+   "firstSeen": "2026-11-12T16:48:04+00:00"
+  },
+  {
+   "source": "Reed",
+   "id": "reed-57562460",
+   "title": "Software Engineer",
+   "company": "Advanced Resource Managers Limited",
+   "location": "Newcastle Upon Tyne",
+   "contract": "Contract",
+   "salary": "60.0–70.0 GBP",
+   "remoteHint": false,
+   "published": "12/11/2026",
+   "url": "https://www.reed.co.uk/jobs/software-engineer/57562460",
+   "description": "Software Engineer 12 month contract Can be based in Newcastle or Guildford Offering up to 70ph Inside IR35 Do you have experience with Java? Do you have experience with Kubernetes or Red Hat OpenShift? Do you want to work with an industry-leading company? If your answer to these is yes, then this could be the role for you! As the Software Engineer, you will be working alongside a market-leading De",
    "firstSeen": "2026-11-12T16:48:04+00:00"
   },
   {
@@ -1732,53 +1731,6 @@
    "description": "Contexte et objectif Vous contribuez à l’exploitation et à l’évolution d’une plateforme data existante sur Google Cloud Platform. L’objectif est de garantir son fonctionnement au quotidien et de faciliter son utilisation par les équipes data. Missions Maintenir la plateforme en conditions opérationnelles et traiter les demandes récurrentes ainsi que les anomalies. Gérer les droits d’accès et les h",
    "country": "",
    "firstSeen": "2026-11-12T16:48:04+00:00"
-  },
-  {
-   "source": "Jobicy",
-   "id": "jobicy-161359",
-   "title": "Senior Platform Engineer",
-   "company": "Filigran",
-   "location": "France",
-   "contract": "Full-Time",
-   "salary": "",
-   "remoteHint": true,
-   "published": "2026-11-11T17:13:06+00:00",
-   "url": "https://jobicy.com/jobs/161359-senior-platform-engineer-7",
-   "description": "The Company Founded in 2022, Filigran is a global cybersecurity company on a mission to empower defense teams to be proactive through open-source solutions that uncover threats and drive action. Filigran stands out in the cybersecurity ecosystem through its open-source, AI-powered and threat-informed approach to Continuous Threat Exposure Management (CTEM). Our eXtended Threat Management&hellip;",
-   "country": "",
-   "firstSeen": "2026-11-11T22:41:45+00:00"
-  },
-  {
-   "source": "Collective",
-   "id": "collective-cmwcj8vzn0xm34ob11n0r7jre",
-   "title": "Senior DevOps Network - Product Owner",
-   "company": "Surfjob Consulting",
-   "location": "{\"fullNameEnglish\": \"Lille, France\", \"fullNameFrench\": \"Lille, France\"}",
-   "contract": "FULL_TIME",
-   "salary": "",
-   "remoteHint": true,
-   "workPreferences": "[\"HYBRID\", \"ON_SITE\"]",
-   "published": "2026-11-11T19:49:26.411Z",
-   "url": "https://www.collective.work/job/senior-devops-network-product-owner-szoj",
-   "description": "Contexte La Business Unit Cloud Platform Engineering (CPE) a pour mission de rationaliser le catalogue de produits techniques référencés au sein du groupe et de fournir des services clé en main aux équipes IT. L’objectif est de leur permettre de se concentrer sur le développement de fonctionnalités à forte valeur ajoutée, tout en s’appuyant sur des plateformes standardisées, robustes et industrial",
-   "country": "",
-   "firstSeen": "2026-11-11T22:41:45+00:00"
-  },
-  {
-   "source": "Collective",
-   "id": "collective-cmwcfaaqw0by94ubqgxid725n",
-   "title": "Senior DevOps Network GCP Product Owner Automatisation",
-   "company": "Naxo",
-   "location": "{\"fullNameEnglish\": \"Lille, France\", \"fullNameFrench\": \"Lille, France\"}",
-   "contract": "FREELANCE",
-   "salary": "525",
-   "remoteHint": true,
-   "workPreferences": "[\"HYBRID\"]",
-   "published": "2026-11-11T17:58:33.735Z",
-   "url": "https://www.collective.work/job/senior-devops-network-gcp-product-owner-automatisation-mf26",
-   "description": "Contexte La Business Unit Cloud Platform Engineering (CPE) a pour mission de rationaliser le catalogue de produits techniques et de fournir des services clé en main aux équipes IT, via des plateformes standardisées, robustes et industrialisées. L’équipe Network combine l’expertise réseau et les pratiques DevOps pour rationaliser et fiabiliser les opérations réseau, accélérer l’automatisation et am",
-   "country": "",
-   "firstSeen": "2026-11-11T22:41:45+00:00"
   }
  ]
 }

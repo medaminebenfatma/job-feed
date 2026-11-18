@@ -1,9 +1,9 @@
 {
- "generatedAt": "2026-11-17T23:29:47+00:00",
+ "generatedAt": "2026-11-18T07:25:51+00:00",
  "windowDays": 3,
  "counts": {
-  "Reed": 205,
-  "Jobicy": 63,
+  "Reed": 206,
+  "Jobicy": 65,
   "Collective": 211,
   "Greenhouse": 33,
   "Indeed": 28,
@@ -31,10 +31,53 @@
   "Crossover: no job data read from www.crossover.com/job-roles/devops-engineer/united-arab-emir (needs a custom parser or is blocked)",
   "Justjoin.it: no job data read from justjoin.it/job-offers/remote/devops (needs a custom parser or is blocked)",
   "Arc: no job data read from arc.dev/remote-jobs?q=devops (needs a custom parser or is blocked)",
-  "Xebia Poland: HTTPError",
-  "Apify JobServe United Kingdom DevOps: HTTP 401 User was not found or authentication token is not valid"
+  "Xebia Poland: HTTPError"
  ],
  "jobs": [
+  {
+   "source": "Reed",
+   "id": "reed-57583210",
+   "title": "Dynamics365 Power Platform Support Analyst",
+   "company": "Advanced Resource Managers Limited",
+   "location": "London",
+   "contract": "Contract",
+   "salary": "450.0–450.0 GBP",
+   "remoteHint": false,
+   "published": "17/11/2026",
+   "url": "https://www.reed.co.uk/jobs/dynamics365-power-platform-support-analyst/57583210",
+   "description": "Dynamics365 Power Platform Support Analyst Rate - 450 per day Inside IR35 Start - ASAP Duration - 4 months Location - Birmingham (the role would be hybrid, some travel to NTT DATA and client offices in Birmingham/London may be required) Must be eligible for SC Clearance The Role This role will lead the service, from taking transition of the D365 and Power Platform estate from the current team to h",
+   "firstSeen": "2026-11-18T07:25:51+00:00"
+  },
+  {
+   "source": "Jobicy",
+   "id": "jobicy-155629",
+   "title": "Senior SRE, Managed Gateways",
+   "company": "Kong Inc.",
+   "location": "USA",
+   "contract": "Full-Time",
+   "salary": "",
+   "remoteHint": true,
+   "published": "2026-11-18T04:00:12+00:00",
+   "url": "https://jobicy.com/jobs/155629-senior-sre-managed-gateways",
+   "description": "Are you ready to unlock intelligence? If you don’t think you meet all of the criteria below but are still interested in the job, please apply. Nobody checks every box - we’re looking for candidates that are particularly strong in a few areas, and have some interest and capabilities in others. Senior SRE, Managed Gateways&hellip;",
+   "country": "",
+   "firstSeen": "2026-11-18T07:25:51+00:00"
+  },
+  {
+   "source": "Jobicy",
+   "id": "jobicy-153466",
+   "title": "Senior DevOps Engineer - Storage Platforms",
+   "company": "Five9",
+   "location": "USA",
+   "contract": "Full-Time",
+   "salary": "",
+   "remoteHint": true,
+   "published": "2026-11-18T03:00:34+00:00",
+   "url": "https://jobicy.com/jobs/153466-senior-devops-engineer-storage-platforms",
+   "description": "Join us in bringing joy to customer experience. Five9 is a leading provider of cloud contact center software, bringing the power of cloud innovation to customers worldwide. Living our values everyday results in our team-first culture and enables us to innovate, grow, and thrive while enjoying the journey together. We celebrate diversity and foster an&hellip;",
+   "country": "",
+   "firstSeen": "2026-11-18T07:25:51+00:00"
+  },
   {
    "source": "Reed",
    "id": "reed-57584909",
@@ -329,6 +372,21 @@
    "firstSeen": "2026-11-17T23:29:47+00:00"
   },
   {
+   "source": "Greenhouse",
+   "id": "greenhouse-gitlab-8932489002",
+   "title": "Senior Staff SRE, Architecture Engineering: Hosted Runners",
+   "company": "gitlab",
+   "location": "Remote, Canada; Remote, United Kingdom; Remote, United States",
+   "contract": "",
+   "salary": "",
+   "remoteHint": true,
+   "published": "2026-11-17T15:44:55-05:00",
+   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8932489002",
+   "description": "",
+   "country": "",
+   "firstSeen": "2026-11-17T23:29:47+00:00"
+  },
+  {
    "source": "Collective",
    "id": "collective-cmwkut41x227d01fz0b3vabpc",
    "title": " Expert Azure Databricks / Azure Batch",
@@ -341,21 +399,6 @@
    "published": "2026-11-17T15:35:15.213Z",
    "url": "https://www.collective.work/job/expert-azure-databricks-azure-batch-zzpg",
    "description": "Client : Assurance Expert Azure Databricks / Azure Batch Expérience : 7 ans Localisation : PARIS 8 Durée : 3 ans DESCRIPTION DE LA MISSION Expert Azure Databricks &amp; Azure Batch – Data Engineering / DevOps Contexte de la mission Dans le cadre de l'accélération des projets Data &amp; IA sur Microsoft Azure, nous recherchons un expert confirmé capable de concevoir, industrialiser et maintenir des",
-   "country": "",
-   "firstSeen": "2026-11-17T23:29:47+00:00"
-  },
-  {
-   "source": "Greenhouse",
-   "id": "greenhouse-gitlab-8932489002",
-   "title": "Senior Staff SRE, Architecture Engineering: Hosted Runners",
-   "company": "gitlab",
-   "location": "Remote, Canada; Remote, United Kingdom; Remote, United States",
-   "contract": "",
-   "salary": "",
-   "remoteHint": true,
-   "published": "2026-11-17T15:44:55-05:00",
-   "url": "https://job-boards.greenhouse.io/gitlab/jobs/8932489002",
-   "description": "",
    "country": "",
    "firstSeen": "2026-11-17T23:29:47+00:00"
   },
